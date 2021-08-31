@@ -69,6 +69,7 @@ layout: page
      - [Create a Sample Type](create-sample-type.html)
      - [Create a Sample](create-sample.html)
      - [Legacy Biosamples](legacy-biosamples.html)
+     - [Export Samples for ENA submission](datahub-ena-export.html)
 - [Using SEEK with openBIS](openbis.html)
 - [API Introduction](api.html)
 - [Reporting a bug or feature request](/tech/reporting-bugs-and-features.html)
