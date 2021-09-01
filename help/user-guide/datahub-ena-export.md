@@ -17,7 +17,7 @@ Information is added as Samples to each Sample Type. For more information, see [
 
 Step by step guide:
 1. Select Create and then Sample in the drop down menu.
-2. Under Other Projects, select XXXX Project to display only the 4 ENA export related Sample Types.
+2. Under Other Projects, select the "ENA submission example" Project to display only the 4 ENA export related Sample Types.
 3. Identify the Sample Type you wish to use and select New Sample or New batch submission, depending on the number of Samples you wish to create.
 4. Add the information requested in each attribute field presented. An explanation of each attribute for the 4 Sample Types is provided at the end of this page.
 5. After adding all the required information in all the 4 Sample Types, navigate to your Project’s page and click on the ENA export button.
