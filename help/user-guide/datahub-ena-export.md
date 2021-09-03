@@ -18,24 +18,24 @@ Information is added as Samples to each Sample Type. For more information, see [
 Step by step guide:
 1. Select Create and then Sample in the drop down menu.
 
-![datahub menu create sample](/images/user-guide/datahub-test-create-sample.png){:.screenshot}
+   ![datahub menu create sample](/images/user-guide/datahub-test-create-sample.png){:.screenshot}
 
 2. Under Other Projects, select the "ENA submission example" Project to display only the 4 ENA export related Sample Types.
 
-![datahub ENA sample types](/images/user-guide/datahub-test-ENA-sample-types.png){:.screenshot}
+   ![datahub ENA sample types](/images/user-guide/datahub-test-ENA-sample-types.png){:.screenshot}
 
 3. Identify the Sample Type you wish to use and select New Sample or New batch submission, depending on the number of Samples you wish to create.
 
 4. Add the information requested in each attribute field presented. An explanation of each attribute for the 4 Sample Types is provided at the end of this page.
 
-![datahub ENA_study sample example](/images/user-guide/datahub-test-ENA-sample-ENA_study.png){:.screenshot}
+   ![datahub ENA_study sample example](/images/user-guide/datahub-test-ENA-sample-ENA_study.png){:.screenshot}
 
 5. After adding all the required information in all the 4 Sample Types, navigate to your Project’s page and click on the ENA export button.
    * Independent tables in TSV format will be exported for all the ENA related Sample Types.
    * Metadata from other Sample Types is not included in the export.
    * Only Samples pertaining to that project, and that you have permission to access, are included in the resulting files.
 
-![datahub ENA export](/images/user-guide/datahub-test-ENA-export-button.png){:.screenshot}
+   ![datahub ENA export](/images/user-guide/datahub-test-ENA-export-button.png){:.screenshot}
 
 6. The resulting tables are ready for submission to ENA using the [ENA-upload-cli](https://github.com/usegalaxy-eu/ena-upload-cli) tool.
 
