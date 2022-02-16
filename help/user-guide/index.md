@@ -69,7 +69,7 @@ layout: page
      - [Create a Sample Type](create-sample-type.html)
      - [Create a Sample](create-sample.html)
      - [Legacy Biosamples](legacy-biosamples.html)
-- [Bulk changing of sharing permissions](bulk-change-sharing-permission.html)
+     - [Export Samples for ENA submission](datahub-ena-export.html)
 - [Using SEEK with openBIS](openbis.html)
 - [Using Copasi in SEEK](copasi-button.html)  
 - [API Introduction](api.html)
