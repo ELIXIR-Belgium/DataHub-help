@@ -71,6 +71,7 @@ layout: page
      - [Legacy Biosamples](legacy-biosamples.html)
 - [Collections](collections.html)
 - [Bulk changing of sharing permissions](bulk-change-sharing-permission.html)
+     - [Export Samples for ENA submission](datahub-ena-export.html)
 - [Using SEEK with openBIS](openbis.html)
 - [Using Copasi in SEEK](copasi-button.html)  
 - [API Introduction](api.html)
