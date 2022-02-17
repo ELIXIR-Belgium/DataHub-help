@@ -13,7 +13,7 @@ DataHub offers 4 Sample Types tailored for capturing the necessary metadata for 
 * ENA_experiment
 * ENA_run
 
-Information is added as Samples to each Sample Type. For more information, see [Creating a Sample](create-sample.html). Examples for each Sample Type can be found in the [ENA submission example Project](https://datahub.test.elixir-belgium.org/projects/2).
+Information is added as Samples to each Sample Type. For more information, see [Creating a Sample](create-sample.html). Examples for each Sample Type can be found in the [ENA submission example Project](https://datahub.usecase.elixir-belgium.org/projects/2).
 
 Step by step guide:
 1. Select Create and then Sample in the drop down menu.
