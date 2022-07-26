@@ -36,7 +36,7 @@ A Study creation via Design Study button in Single Page view requires the follow
   * Filter existing Templates and choose one from the drop down menu. Before selecting “Apply”, use the Attributes table to:
     * Set attributes as “Required” or not
     * Remove not required attributes
-  * Select “Add new attributes” at the bottom of the page if you want to add new attributes of your choice to your Source Sample Type for the Study. Attributes for Sample Sample Type will be the columns in a table that require information about
+  * Select “Add new attributes” at the bottom of the page if you want to add new attributes of your choice to your Sample Type for Samples in the Study. Attributes in the Sample Type for Sample will be the columns in a table that require information about
     * Collection method or parameters used in the sample collection protocol of the physical Sample from the Source, such as collection date, experimentalist etc
     * Any relevant characteristics of the Sample in the Study, from anatomy and developmental stage to storage of each physical tube in a laboratory.
 
