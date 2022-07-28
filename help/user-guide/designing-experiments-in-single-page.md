@@ -66,7 +66,7 @@ An Assay creation via Design Assay button in Single Page view requires the follo
 In Single Page, SEEK samples can be
 * “Sources”: Sources must belong to one Study.
 * “Samples” in a Study: Samples in Study must derive from the Sources and must belong to the same Study.
-* “Samples” in an Assay: Samples in Assay must derive from the Samples of the Study and must belong to an Assay related to the same Study.
+* “Samples” in an Assay: Samples in Assay must derive from the Samples of the Study or of another Assay, and must belong to an Assay related to the same Study.
 
 Therefore, creating SEEK samples in Single Page need the following prerequisites:
 * The Project must have Investigation with at least one Study in order to create Sources and Samples in Study.
