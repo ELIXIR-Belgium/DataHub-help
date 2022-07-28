@@ -52,6 +52,7 @@ An Assay must belong to only one Study and multiple Assays can belong to the sam
 To generate an Assay within the Study in Single Page, select Design Assy from the button at the top right corner of the single page view, fill in the shown form and select Create button.
 
 An Assay creation via Design Assay button in Single Page view requires the following conditions:
+* Select one SOP (Protocol), which is already registered in SEEK, describing the used  protocol in the Assay. See how to create an SOP in SEEK.
 * Define Sample Type for Sample
   * Choose a Template to create a Sample Type to describe your Samples by selecting Existing Templates button (see difference between Template and Sample Type)
   * Filter existing Templates and choose one from the drop down menu. Before selecting “Apply”, use the Attributes table to:
@@ -60,4 +61,45 @@ An Assay creation via Design Assay button in Single Page view requires the follo
   * Select “Add new attributes” at the bottom of the page if you want to add new attributes of your choice to your Sample Type for Sample in the Assay. Attributes in the Sample Type for Sample will be the columns in a table that require information about
     * The method, the protocol and its parameters applied to the Assay to generate the Assay’s outputs
     * Any relevant characteristics of the Assay’s outputs, from sample’s amount and quality to storage of each physical tube in a laboratory or of each digital data file in a storage.
-* Select one SOP (Protocol), which is already registered in SEEK, describing the used  protocol in the Assay. See how to create an SOP in SEEK.
+
+## Creating samples in Single Page
+In Single Page, SEEK samples can be
+* “Sources”: Sources must belong to one Study.
+* “Samples” in a Study: Samples in Study must derive from the Sources and must belong to the same Study.
+* “Samples” in an Assay: Samples in Assay must derive from the Samples of the Study and must belong to an Assay related to the same Study.
+
+Therefore, creating SEEK samples in Single Page need the following prerequisites:
+* The Project must have Investigation with at least one Study in order to create Sources and Samples in Study.
+* The Study must have at least one Assay in order to create Samples in Assay.
+
+### Creating Sources in Study
+* In Project Single Page tree view (on the left side), select the Investigation.
+* Create a Study by using the Design Study button at the top right corner of the Investigation page. See Creating a Study in Single Page. 
+* Select the Study in the tree view 
+  * then the Study design tab at the center of the page. Go to the Sources table tab, which shows the headers (columns) of your Source Sample Type. 
+  * Or alternatively, select Sources table item under Study in the tree view.
+* You can create Sources in two ways:
+  * Select the Add row button at the bottom of the page to start. Make sure to fill in all the mandatory columns and then select Save. For each row that gets saved, a single Source is created.
+  * Use the Paste From Clipboard button at the bottom of the page to fill in the table, if you have the information (metadata) elsewhere in a matching spreadsheet. For each row that gets saved, a single Source is created.
+* Note that:
+  * The Source name column will define the name of each source.
+  
+### Creating Samples in Study
+* In Project Single Page tree view (on the left side), select Study in the tree view
+  * then the Study design tab at the center of the page. Go to the Samples table tab, which shows the headers (columns) of your Sample Type for Samples in Study. 
+  * Or alternatively, select Samples table item under Study in the tree view.
+* You can create Samples in the Study in two ways:
+  * Select the Add row button at the bottom of the page to start. Make sure to fill in all the mandatory columns and then select Save. For each row that gets saved, a single Samples is created in the Study.
+  * Use the Paste From Clipboard button at the bottom of the page to fill in the table, if you have the information (metadata) elsewhere in a matching spreadsheet. For each row that gets saved, a single Sample is created in the Study.
+* Note that:
+  * The input for this Sample Type must be a Source name as defined in the Sources table. Input cannot be Pasted From Clipboard.
+  * The name of the output for this Sample Type or the name of the Samples in this Study will be defined by the column highlighted in light blue.
+  
+### Creating Samples in Assay
+* In Project Single Page tree view (on the left side), select Assay in the tree view, then the Assay design tab at the center of the page. Go to the Samples table tab, which shows the headers (columns) of your Sample Type for Samples in Assay.
+* You can create Samples in the Assys in two ways:
+  * Select the Add row button at the bottom of the page to start. Make sure to fill in all the mandatory columns and then select Save. For each row that gets saved, a single Samples is created in the Assay.
+  * Use the Paste From Clipboard button at the bottom of the page to fill in the table, if you have the information (metadata) elsewhere in a matching spreadsheet. For each row that gets saved, a single Sample is created in the Assay.
+* Note that:
+  * The input for this Sample Type must be a Sample of the Study or of the previous Assay as defined in the Samples table in Study or in Assay. Input cannot be Pasted From Clipboard.
+  * The name of the output for this Sample Type or the name of the Samples in this Assay will be defined by the column highlighted in light blue.
