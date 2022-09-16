@@ -48,7 +48,7 @@ layout: page
   - [Creating an Investigation in Single Page](designing-experiments-in-single-page.html#creating-an-investigation-in-single-page)
   - [Creating a Study in Single Page](designing-experiments-in-single-page.html#creating-a-study-in-single-page)
   - [Creating an Assay in Single Page](designing-experiments-in-single-page.html#creating-an-assay-in-single-page)
-- [Exporting experiments from Single Pag](exporting-experiments-from-single-page.html)
+- [Exporting experiments from Single Page](exporting-experiments-from-single-page.html)
 - [Making an Investigation, Study or Assay citable](investigation-snapshots.html)
      - [Making public](investigation-snapshots.html#making-public)
      - [Snapshotting](investigation-snapshots.html#snapshotting)
@@ -78,7 +78,7 @@ layout: page
 - [Creating samples in Single Page](designing-experiments-in-single-page.md#creating-samples-in-single-page)
 - [Templates](templates-for-sample-types.html)
   - [Creating templates](templates-for-sample-types.html#creating-templates)
-- [Browsing samples.md](browsing-samples.html)
+- [Browsing samples](browsing-samples.html)
   - [Browse samples by templates](browsing-samples.html#browse-samples-bytemplates)
   - [Browse samples by sample type](browsing-samples.md#browse-samples-by-sample-type)
     
