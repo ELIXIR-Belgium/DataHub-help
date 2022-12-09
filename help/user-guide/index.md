@@ -112,6 +112,9 @@ layout: page
 - [Using SEEK with openBIS](openbis.html)
 - [Using Copasi in SEEK](copasi-button.html)
 
+## Examples
+- [Overview and examples of how to use Single Page](examples.html)
+
 ## User guide for API
 - [API Introduction](api.html)
 
