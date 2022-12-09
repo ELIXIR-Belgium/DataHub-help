@@ -20,7 +20,7 @@ layout: page
 - [Creating a Project](create-a-project.html)
 - [Joining a Project](join-a-project.html)
 - [Project Dashboard](project-dashboard.html)
-- [Viewing Project in Sigle Page](viewing-project-in-single-page.html)
+- [Viewing Project in Single Page](viewing-project-in-single-page.html)
 - [Specialist user roles and their capabilities](roles.html)
 
   _Specialist user roles_
