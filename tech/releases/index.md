@@ -11,6 +11,139 @@ Please see [Getting FAIRDOM-SEEK](/get-seek.html) for details about installing S
 
 If you have any comments or feedback about a release, then please [Contact Us](/contacting-us.html)
 
+## Version 1.13.0
+
+Release date: _12th January 2023_
+
+A major release with broad number of changes, including many small changes and bug fixes not listed here.
+The high level changes include:
+
+* **Maintenance period** - code tidying, removing old unused features, refactoring.
+* **Rails 6.1 upgrade**.
+* **Workflow support improvements**:
+  * **Git** repository support:
+      * Import from git repository,
+      * Add and modify files dynamically,
+      * Preview and download individual files,
+      * Versioning via Git.
+  * **Bio.tools** integration for workflow steps,
+  * **Citation CFF** support,
+  * **Jupyter** notebook rendering,
+  * **RO-Crate** parsing and creation fixes,
+  * Improved workflow **diagram** generation,
+  * Workflow **maturity flag** and filter,
+  * **LifeMonitor** integration - filter by test status.
+* **Sample enhancements**:
+    * Extraction performance improvements,
+    * Improved error handling and reporting during sample extraction,
+    * Sample types have contributor shown, and now supports creators,
+    * Filtering and search view now available for samples and sample types.
+    * JSON API improvements.
+* **Integrated [TeSS](https://tess.elixir-europe.org/) search** for Events.
+* **Timezone information** provided for Event start and end dates.
+* **Search improvements**:
+  * Fix to the order of search results,
+  * Improvements to indexing.
+  * Harmonization between general search and searching and filtering.
+* **Show the last person** that updated an item (shown only to project members).
+* **Improvements to the table view** of items, adding more columns and making more consistent.
+* **Tagging projects from the EDAM** ontology, and made easier to extend with other ontologies in the future.
+* **API testing and documentation** improvements.
+* **Project creation and join requests** fixes and improvements, including:
+    * Other administrators are notified when a request is responded to.
+    * Ability to delete a request without responding, for handling spam or duplicates.
+* **Descriptive help text** for each creatable entry, show in the Create or Browse pages that link off to documentation where available.
+* **IBISBA enhancements**:
+  * iPOP - to populate a Project and ISA information from a spreadsheet template,
+  * File templates and Placeholders.
+* **Publication improvements**:
+  * Option to support the upload of full text PDF or link,
+  * Any number of related links,
+  * Option to allow editing imported publications.
+* **Settings caching** - giving a page load speed improvement
+* **Cookie consent banner** improved to give more control over which cookies are set, and when content from other sites can be embedded.
+
+For a full list, see [closed issues for 1.13.0](https://github.com/seek4science/seek/milestone/10?closed=1)
+
+
+
+## Version 1.12.3
+
+Release date: _5th August 2022_
+
+Small bug fix release that patches an issue introduced by the previous release causing a 404 when trying to filter using a search term.
+
+## Version 1.12.2
+
+Release date: _28th July 2022_
+
+Small update release that includes
+
+* A fix to search results not being correctly displayed in order of relevance
+* A fix that correctly displays the tab, when linking to a tab (such as related items) using the bookmark (e.g <https://fairdomhub.org/programmes/20#projects> )
+
+For a full list, see [closed issues for 1.12.2](https://github.com/seek4science/seek/milestone/11?closed=1)
+
+## Version 1.12.1
+
+Release date: _24th June 2022_
+
+Small release with some bugfixes and small improvements. In particular a security fix, so **we recommend upgrading to this version**
+
+* An overhaul and refresh of Gatekeeper behaviour, fixing bugs and allowing repeat requests to be sent following a previous rejection.
+* Fix to an error when interacting with the Ontology Lookup Service API, which affected creating and using sample types and controlled vocabularies in some cases.
+* More tolerant URL checking when registering a remote asset. 
+* Removed option to generate a DOI for a hidden version.
+
+For a full list, see [closed issues for 1.12.1](https://github.com/seek4science/seek/milestone/9?closed=1)
+
+## Version 1.12.0
+
+Release date: _6th May 2022_
+
+
+For a full list, see [closed issues for 1.12.0](https://github.com/seek4science/seek/milestone/6?closed=1)
+
+This version includes:
+
+* **Collections** - the ability to bundle together items that are conceptually related into an ordered list, which can
+  then be shared together as collection.
+* **New customisable front landing page** - a cleaner front page, with more useful information, that can be customized
+  and configured per SEEK instance.
+* **Sample attributes enhancements** - attributes can be provided a description, which provides more details when
+  entering or viewing a sample. They can also be given a persistent identifier, to provide a semantic definition of the
+  attributes meaning.
+* **Improvements to how creators can be credited** - there is now an improved UI for crediting the creators, or authors,
+  of assets. Extra information, such their as ORCID and affiliation, can now be added for each creator, even if they are
+  not registered in SEEK. The exact order of how creators appear can also be specified.
+* **Explicit ordering of Investigations, Studies and Assays** - each can be provided with an explicit order within the
+  other, rather than the order they are added. They can re-ordered at any time.
+* **Ability to link a Sample to multiple other samples** - previously, a sample could only be linked to a single other
+  sample. This has now been updated to allow a one to many relationship as long as the samples are of the same type.
+* **EDAM annotations for workflows** - describe the workflow operations and topics from the EDAM ontology. This is also
+  planned to be reused to describe data types and formats.
+* **Simpler branding settings** - for SEEK administrators, the settings to give particular branding to an instance were
+  complicated and confusing. This has now been simplified, and organised in logical groups.
+* **Moved related items into a tab** - the list of related items associated with the item shown have now been moved into a separate tab, rather than needing to
+  scroll to the bottom of the page. There are also plans to move other information, such as versions and files, into
+  additional tabs.
+* **Fixes and improvements running to under a relative URL** - for those running SEEK under a relative URL (
+  e.g. https://mysite.com/fairdom-seek/), some issues were found with incorrect links. These problems have now been
+  fixed, for both Docker and Bare-metal installations, and the testing process improved.
+* **Batch registration of Samples through the API** - it is now possible to register Samples in batches through the API,
+  rather than one by one, to reduce the number of necessary calls and performance.
+* **Updated to use latest version of Apache Solr** - the Apache Solr that was being bundled with SEEK, was no longer
+  being maintained and updated. This locked SEEK to an older version of Java. Solr has now been separated, that can be
+  installed separately using the latest version, along with an updated configurations. A new updated Docker image is
+  also now available.
+* **Workflow API enhancements** updates to support the GA4GH TRS API, allowing one click execution of Galaxy workflows, and support for registering an RO-Crate through the API.
+* **Extending the items a workflow can be linked to** - ability to link a workflow to Datafiles (as test, example and training data),
+  Documents, SOPs, and Presentations as well as Publications.
+* **User defined workflow types** - users can now add to the selection of workflow types, if they can't find the one
+  they need, when registering a workflow.
+
+For a full list, see [closed issues for 1.12.0](https://github.com/seek4science/seek/milestone/6?closed=1)
+
 ## Version 1.11.3
 
 Release date: _3rd November 2021_
