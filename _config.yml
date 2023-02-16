@@ -1,13 +1,21 @@
-#baseurl: /seek
-
-current_seek_version: "1.12.0"
-current_docker_tag: "1.12"
-
 plugins:
+  - jemoji
   - jekyll-sitemap
-  - jekyll-redirect-from
-  - jekyll-feed
+  - jekyll-github-metadata
+  - webrick
 
-name: FAIRDOM
-url: https://docs.seek4science.org
-author: FAIRDOM
+exclude:
+  - .gitignore
+  - var/
+  - vendor
+  - Gemfile*
+  - LICENSE
+
+permalink: /:categories/:year/:month/:day/:title
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"

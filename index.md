@@ -1,34 +1,9 @@
 ---
-layout: page
-title: Front page
 ---
+<img src="/assets/img/Datahub_logo_stack.svg" height="100px" als="datahub logo" class="img-fluid mb-2">
 
-## About FAIRDOM-SEEK
-
-The FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets, 
-models or simulations, processes and research outcomes. More details about SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org)
-
-For an example of FAIRDOM-SEEK please visit our [Demo](http://demo.seek4science.org).
-
-## Getting FAIRDOM-SEEK
-
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to [Getting FAIRDOM-SEEK](get-seek.html)
-
-## User Guides
-
-General documentation on how to use and administer FAIRDOM-SEEK can be found in our [User Guide](help/user-guide/index.html)
-
-## API Documentation
-
-Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction](/help/user-guide/api.html) 
-
-## Other Guides
-
-We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
-in our [Guides](help/index.html)
-
-## Contacting and Contributions
-
-There are [Contact Details](/contacting-us.html), should you wish to ask a question or make a suggestion.
-
-We also welcome contributions, so please visit our [Contributors Guide](/contributing.html)
+# DataHub Help
+<p class="lead my-4">This help page is under development. Visit our test version if you want to have a look at what the future brings.</p>
+<p class="lead">
+  <a href="https://datahub.help-test.elixir-belgium.org/" class="btn btn-lg btn-light fw-bold"><i class="fa-solid fa-arrow-right-long me-2"></i>Test version of DataHub help</a>
+</p>
