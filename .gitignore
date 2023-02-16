@@ -1,26 +1,2 @@
-syntax: glob
-.idea/
 _site/
-
-*.DS_Store
-*~
-
-*.~lock*
-
-*.orig
-
 Gemfile.lock
-
-
-#seek application folders that may hang around
-filestore*/
-config/
-coverage/
-log/
-public/
-solr/
-tmp/
-.bundle/
-db/
-filestore
-vendor/
