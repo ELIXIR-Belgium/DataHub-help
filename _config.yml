@@ -7,7 +7,6 @@ plugins:
 exclude:
   - .gitignore
   - var/
-  - vendor
   - Gemfile*
   - LICENSE
 
