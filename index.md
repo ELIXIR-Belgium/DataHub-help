@@ -1,4 +1,5 @@
 ---
+layout: page
 ---
 <img src="/assets/img/Datahub_logo_stack.svg" height="100px" als="datahub logo" class="img-fluid mb-2">
 

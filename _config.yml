@@ -11,11 +11,4 @@ exclude:
   - Gemfile*
   - LICENSE
 
-permalink: /:categories/:year/:month/:day/:title
-
-defaults:
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      layout: "page"
+permalink: pretty
