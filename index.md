@@ -1,7 +1,7 @@
 ---
 layout: page
 ---
-<img src="/assets/img/Datahub_logo_stack.svg" height="100px" als="datahub logo" class="img-fluid mb-2">
+<img src="/assets/img/Datahub_logo_stack.svg" height="100px" alt="datahub logo" class="img-fluid mb-2">
 
 # DataHub Help
 <p class="lead my-4">This help page is under development. Visit our test version if you want to have a look at what the future brings.</p>
