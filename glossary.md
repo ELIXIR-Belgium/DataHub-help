@@ -37,10 +37,15 @@ Definition of terms used in FAIRDOM-SEEK.
 
 ## Experiments
 ### Assay
+### Design study
+### Design assay
 ### Experimental assay
+### Experiment overview
 ### Investigation
 ### ISA
-### Modelling assay
+### Modelling analysis/analyses
+### Source table
+### Sample table
 ### Study
 
 ## Assets
@@ -53,9 +58,8 @@ Definition of terms used in FAIRDOM-SEEK.
 ### File template
 ### Maintainer
 ### Model
-### Model format
-### Model type
-### Modelling analysis/analyses
+* Model format
+* Model type
 ### Preferred execution or visualisation environment
 ### Placeholder
 ### Publication
@@ -117,12 +121,24 @@ Definition of terms used in FAIRDOM-SEEK.
 ### Extended metadata
 ### License
 ### Organism
+* Display name
+* NCBI Taxonomy URI
 ### Position
 ### Sharing
 ### Submitter
 ### Strain
+* Based on
+* Comment
+* Gene affected
+* Genotypes
+* Kind of mutation
+* Phenotypes
+* Provider name
+* Provider's strain id
+* Synonym
 ### Tags
 ### Title
 
 ## Integrations
+### Single page
 
