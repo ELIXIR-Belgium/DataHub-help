@@ -73,7 +73,6 @@ Definition of terms used in FAIRDOM-SEEK.
 ### Phone
 ### Profile
 ### Provide feedback
-### Search external
 ### Skype name
 ### Web page
 
@@ -103,6 +102,11 @@ Definition of terms used in FAIRDOM-SEEK.
 ### Experiment overview
 ### Investigation
 ### ISA
+### ISA Overview
+* Fullscreen
+* Graph
+* Split
+* Tree
 ### Modelling analysis/analyses
 ### Source table
 ### Sample table
@@ -235,13 +239,17 @@ Definition of terms used in FAIRDOM-SEEK.
 * Last updated
 * Last updated by
 * Views
-### ISA Overview
-* Fullscreen
-* Graph
-* Split
-* Tree
+### Browse
+* Advanced search and filtering
+* Condensed
+* Default
+* Table
+### Overview
+### Related items
+### Search external
 ### Storage Usage
 ### Change picture or avatar
+### (number + number)
 
 ## Integrations
 ### Single page
