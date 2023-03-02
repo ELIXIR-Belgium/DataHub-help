@@ -95,22 +95,54 @@ Definition of terms used in FAIRDOM-SEEK.
 ### Website
 
 ## Experiments
+Scientific procedures undertaken to make a discovery, test a hypothesis or demonstrate a fact.
 ### Assay
-### Design study
-### Design assay
+From user guide: An assay is in general an experiment that converts either a material or data sample, into a new material or data sample, via a protocol. 
+
+From info icon: An Assay is in general the application of a process (SOP) that converts an input material or data (incoming samples) into a new material or data (outgoing samples). An Assay must belong to one Study.
+### Assay design
+Tab to interact with an ISA Assay.
+### Design Assay
+Design and create an Assay according to the [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay) (ISA Assay). An ISA Assay corresponds to one "process node" of the ISA metadata framework.
+<!--Design Investigation: currently named Create investigation-->
+### Design Study
+Design and create a Study according to the [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#study) (ISA Study).
+### Design the next Assay
+Design and create an ISA Assay in which the inputs (or incomimg samples) are the outputs (or outcoing samples) of the current ISA Assay.
 ### Experimental assay
+Experimental assays refer specifically to laboratory assays.
 ### Experiment overview
+Overview of all Sources and Samples from the Study or from all precedent Assays, in a searchable table.
+### Export ISA
+Export the metadata of one Investigation, including the related Studies and Assays, in [ISA-JSON format](https://isa-specs.readthedocs.io/en/latest/isajson.html).
 ### Investigation
+From user guide: The investigation is a high level concept that links related studies.
+
+From info icon: Investigation is a high level description of the research carried out within a particular Project.
 ### ISA
+The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. <!-- add link?to ISA framework?-->
 ### ISA Overview
-* Fullscreen
-* Graph
-* Split
-* Tree
+* Fullscreen: (from info icon)Toogle between full screen and normal size. (from user guide)A full screen view of the tree can be shown by toggling on the Fullscreen button, and can be reverted by clicking again or pressing the ESC key.
+* Graph: (from info icon)display as a graph, showing the overall ISA structure. (from user guide)show a graphical view of highlighting the item within the network.
+  * all nodes: (from info icon) toogle between expanding all nodes in the graph, or showing just the nearest neighbours.
+  * Reset: (from info icon)resets the graph to its original state, reverting any changes to zoom or moved nodes.
+* Split: (from user guide)The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
+* Tree: (from info icon)display with a folder like tree view. (from user guide)The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
 ### Modelling analysis/analyses
-### Source table
-### Sample table
+Modelling analysis refer specifically to simulations (in silico experiments) of models.
+### New based on this one
+It opens a creation form with pre-filled metadata.
+### Protocol tab
+Tab showing the protocol or SOP applied in the Study or Assay.
+### Sources table
+Sources table is an interactive table (dynamic tables) for creating, editing and deleting Study Sources.
+### Samples table
+Samples table is an interactive table (dynamic tables) for creating, editing and deleting Study Samples and Assay samples.
 ### Study
+From user guide: A study is a particular biological hypothesis or analysis.
+From info icon: A Study is a particular hypothesis, which you are planning to test, using various techniques. A Study must belong to one Investigation and it can contain one or more Assays.
+### Study design
+Tab to interact with an ISA Study.
 
 ## Assets
 ### Attribution
