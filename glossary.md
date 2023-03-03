@@ -76,23 +76,44 @@ Definition of terms used in FAIRDOM-SEEK.
 ### Skype name
 ### Web page
 
+## Directory
+Alias for Yellow pages. Section listing registered people, institutions, projects and programmes.
 ## Yellow pages
+Section listing registered people, institutions, projects and programmes.
 ### Programme
+Programme is an umbrella to group one or more Projects (associated Projects).
+* Web page: link to an online page related to the Programme.
 ### Project
-* Public web page
-* End date
-* Internal web page
-* Start date
+From info icon: A Project represents research activities conducted by a group of one or more people.
+
+From user guide: A Project represents a group of one or more people collaborating together on a particular activity. 
+* Associated programme: select the one programme under which the project will be grouped.
+* Default License: how is it different from just "license" in other objects? (same for sharing policy)
+* End date: end date of the project. What happen after the date?
+* Internal web page: link to a intranet? will this be shown only to project member?
+* Public web page: link to a public web page related to the project.
+* Start date: start date of the project. what happen if retrospectively?
 ### Funding codes
+Codes of funded grants related to the Project or Programme.
 ### Funding details
+Any detail about funded grants related to the Project or Programme.
 ### Role
-* Programme administrator
-* Project administrator
-* Asset housekeeper
-* Asset gatekeeper
-* PALs
+A number of specialist roles to which users can be assigned.
+* Programme administrator: manage and administer the Programme.
+* Project administrator: manage and administer the Project and its members.
+* Asset housekeeper: manage assets belonging to other people in the project who have been flagged as having become inactive in the project.
+* Asset gatekeeper: control whether assets within the project are made public.
+* PALs: people acting as liaisons between the development team of this software and the users of this software.
 ### Site managed programme
-### Website
+Programme administered by the instance administrators (or platform administrators).
+### Space
+Alias for Programme. An umbrella to group one or more Teams.
+### Team
+Alias for Project.
+
+From info icon: research activities conducted by a group of one or more people.
+
+From user guide: represents a group of one or more people collaborating together on a particular activity.
 
 ## Experiments
 Scientific procedures undertaken to make a discovery, test a hypothesis or demonstrate a fact.
