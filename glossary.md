@@ -202,44 +202,63 @@ From info icon: Presentations associated with one or more Projects can be regist
 
 ## Samples
 ### Attributes
-* Description
-* Name
-* Order
-* Persistent ID or PID
-* Required?
-* Title?
-* Type
-* Unit
+Attributes are qualities, features or characteristics of samples.
+* Description: description or definition of the attribute.
+* Name: name of the attribute.
+* Order: to arrange the order in which the attributes are listed.
+* Persistent ID: a link (IRI or URI) to a term defining or identifying the attribute.
+* Required?: to make the attribute mandatory.
+* Title?: to make the value given to the attribute to act as title of the sample.
+* Type: to define the type of attribute.
+* Unit: quantity used for measuring something. <!--who can edit what CV?-->
 ### Attribute types
-* Boolean
+The type of attribute determines the syntax of acceptable values for the attribute. <!--who can edit what CV?-->
+* Boolean: a true/false declaration; 1 or 0 can also be accepted.
 * ChEBI
-* CHEBI ID
-* Controlled Vocabulary
-* Date
-* Date time
-* DOI
+* CHEBI ID: an identification for a specific chemical structure registered in the ChEBI database (https://www.ebi.ac.uk/chebi/) (e.g. CHEBI:17234).
+* Controlled Vocabulary: the single acceptable value for the attribute must be a predefined term that has to be chosen from a given list of terms (controlled vocabulary).
+* Controlled Vocabulary List: the single or multiple acceptable values for the attribute must be one or more predefined terms chosen from a given list of terms (controlled vocabulary).
+* Date: a selected date in the format YYYY-MM-DD; it will be visualised as e.g. 2nd December 2016.
+* Date time: a selected date and time, in the format YYYY-MM-DD HH:MM; it will be visualised as e.g. 2nd December 2016 13:15. <!--is this a standard? time zone?-->
+* DOI: syntax of Digital Object Identifier (DOI).
 * ECN
-* Email address
+* Email address:  e.g. support@fair-dom.org
 * InChl
-* Integer
+* Integer: a whole number; not a fraction (e.g. 1, 2, 3, 4).
 * MetaNetX chemical
 * MetaNetX compartement
 * MetaNetX reaction
 * NCBI ID
-* Ontology
-* Real number
+* Ontology: as for Controlled Vocabulary. <!--special in dynamic table since it accept other values?-->
+* Real number: a number that can be a fraction and include a decimal place, e.g 1.25
 * Registered Data file
-* Registered Sample
-* Registered Sample (multiple)
-* String
-* Text
-* URI
-* Web link
+* Registered Sample: the acceptable value for the attribute is an internal link to one sample registered within SEEK, from one selected sample type.
+* Registered Sample (multiple): the acceptable values for the attribute are internal links to one or multiple samples registered within SEEK, from one selected sample type.
+* Registered Strain: an internal link to a strain registered within SEEK.
+* String: a sequence of characters (e.g Blue).
+* Text: a longer alphanumerical entry (e.g. The 4th experiment in the batch, it was sampled late, so may not be as accurate).
+* URI: a Uniform Resource Identifier, which for example may relate to an ontology term
+* Web link: a link to a specific web page (e.g. http://fair-dom.org)
+### Controlled Vocab
+* Title: name of the list of terms.
+* Description: description of the controlled vocabulary.
+* Ontology: to select one ontology available from the Ontology Lookup Service; terms from the selected ontology will be imported in the controlled vocabulary.
+  * Include root term?: to include the root term in the list of terms; otherwise, only children of the root term will be included.
+* Terms: terms fetched from one ontology available from the Ontology Lookup Service or new terms created by users. <!--who can edit what CV?-->
+  * Label: name of the term as fetched from the ontology or given by the users.
+  * URI: the link (URI) to the term as fetched from the ontology or given by the users.
+  * Parent URI: the link (URI) to the root term of the term in question as fetched from the ontology or given by the users.
 ### Sample
+From info icon: A Sample is an entity (material or data) that can be converted into a new item (material or data) via a process (SOP), physical or computational. Samples must be associated with one or more Projects.
 ### Sample type
-### Spreadsheet template
+From info icon: A Sample Type is a form with samples' attributes needed to describe and create Samples in SEEK. A Sample type must be associated with one or more Projects.
+* Spreadsheet template: to create a Sample Type in SEEK starting from an excel spreadsheet file. The name of the first sheet or tab must contain the word "sample". The Sample Type created based on the spreadsheet template has attributes based on the column heading in the first row of the first sheet.
+* Template.xlsx: to download a Sample Type registered in SEEK as an empty (without samples) spreadsheet "template.xlsx". Column heading and associated dropdown list will be downloaded as well.
 ### Template
+From info icon: Templates are blueprints that can be reused and applied to Study and Assay for describing Samples. Templates must be associated with one or more Projects.
 ### View Samples
+To visualise samples from one Sample Type in a searchable table.
+* Export table: to export all samples from a Sample Type as .csv file.
 
 ## General attributes
 ### Citation
