@@ -184,11 +184,21 @@ Tab to interact with an ISA Study.
 ### Version History
 
 ## Activities
+### Announce an Event
+To create a new event.
 ### Event
-### End date
+From info icon: Events associated with one or more Projects, happening on specified dates and at a specific location, actual or virtual can be registered in SEEK.
+* Address: address in which the event takes place.
+* City: name of the City in which the event takes place.
+* Country: name of the Country in which the event takes place.
+* End date: date in which the activity ends. It doesn't affect the visibility of the activity after the end date. Or The activity will be shown even after the end date.
+* Event website: link to an online page related to the event.
+* Start date: date in which the activity starts. It doesn't affect the visibility of the activity after the start date. Or The activity will be shown even after the start date.
+* Time zone: time zone in which the activity occurs expressed as GMT offsets.
+### New presentation
+To create a new presentation.
 ### Presentation
-### Start date
-### Time zone
+From info icon: Presentations associated with one or more Projects can be registered in SEEK.
 
 ## Samples
 ### Attributes
