@@ -251,11 +251,15 @@ The type of attribute determines the syntax of acceptable values for the attribu
 ### Sample
 From info icon: A Sample is an entity (material or data) that can be converted into a new item (material or data) via a process (SOP), physical or computational. Samples must be associated with one or more Projects.
 ### Sample type
-From info icon: A Sample Type is a form with samples' attributes needed to describe and create Samples in SEEK. A Sample type must be associated with one or more Projects.
+From info icon: A Sample Type is a form with samples' attributes needed to describe and create samples in SEEK. A Sample Type must be associated with one or more Projects.
 * Spreadsheet template: to create a Sample Type in SEEK starting from an excel spreadsheet file. The name of the first sheet or tab must contain the word "sample". The Sample Type created based on the spreadsheet template has attributes based on the column heading in the first row of the first sheet.
 * Template.xlsx: to download a Sample Type registered in SEEK as an empty (without samples) spreadsheet "template.xlsx". Column heading and associated dropdown list will be downloaded as well.
 ### Template
 From info icon: Templates are blueprints that can be reused and applied to Study and Assay for describing Samples. Templates must be associated with one or more Projects.
+
+OR
+
+Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays. The same Template can be (re)used multiple times to create Sample Types in different ISA Studies or ISA Assays.
 ### View Samples
 To visualise samples from one Sample Type in a searchable table.
 * Export table: to export all samples from a Sample Type as .csv file.
