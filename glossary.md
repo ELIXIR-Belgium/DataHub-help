@@ -296,46 +296,83 @@ To visualise samples from one Sample Type in a searchable table.
 ### Tags
 ### Title
 
-## Other actions
-### Actions
+## Actions
 * Administer Project members
-  * Mark/Unmark user as inactive
-  * Remove user
-* Administer Project members roles
-* Delete
-* Make a snapshot
-* Manage
-* Order
-* Populate
-### Add new
-### Asset report
-### Dashboard
-### Download
-### Overview
-### Request Contact
-### Single page
-### Subscribe
-### Unsubscribe
-### View content
+  * Add members: to add registered users to the project, using one or more institutions. 
+  * Mark/Unmark user as inactive: to manage items of registered users that are not using the platform anymore.
+  * Pending changes: list of changes that have not been confirm yet. Pending changes will not be applied if not confirmed.
+  * Project members: list of all members of the project, grouped by institution. A project member can be listed multiple times if he/she has been added to the project using multiple institutions.
+* Administer Project members roles: to assign or remove administrative roles within the platform.
+  * roles here?
+* Delete: to delete an item. An item can only be deleted if there are no items or people associated with it.
+* Edit: to edit metadata of an item.
+* Make a snapshot: a way of freezing a version of a public Investigation, Study or Assay in its current state, so that even if changes are made over time, the frozen version can be accessed. Public related items can be included or excluded in the snapshot.
+* Manage: to manage
+  * Association with Projects
+  * Sharing permission settings
+  * Creators
+  * Sharing link
+* Order: to arrange the order in which multiple Investigations, Studies and Assays are visually listed within Project, Investigation and Study, respectively.
+* Populate: to populate the structure (ISA, metadata what???) of the project via a compatible tsv file previosly uploaded to the same project.
+## Add new
+To create new Investigation, Study and Assay from the overview page of a Project, Investigation or Study, respectively, even if the newly created item can be associated with a different Project, Investigation or Study from the one selected in the first place.
 
-## Other
-### SEEK ID
-### Activity
-* Created
-* Last updated
-* Last updated by
-* Views
-### Browse
-* Advanced search and filtering
-* Condensed
-* Default
-* Table
-### Overview
-### Related items
-### Search external
-### Storage Usage
-### Change picture or avatar
-### (number + number)
+Also to create an asset immediately associated with the currently selected Assay. The assat can still be associated with different project than the one associated with the Assay.
+## Asset report
+Short report about items that have been shared outside of the project. <!--more detailed needed? no extra info in the guide-->
+## Dashboard
+Page containing various charts presenting metrics on activity within the programme or project over a given time period.
+## Download
+To download assets for which sharing permissions allows the download for a user.
+## Overview
+Tree view of the items associated with the project. The associated Programme is also shown.
+## Request Contact
+To send an email to the submitter of the item to show your interest for it.
+## Single page
+To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only the Samples created via Single Page will be also shown in the tree view.
+## Subscribe
+???
+## Unsubscribe
+???
+## View content
+To visualise the content of the file in the browser.
+## SEEK ID
+Unique identifier within the platform.
+## Activity
+* Created: creation date of an item, e.g. 4th Dec 2012 at 17:38 (Time Zone unkown).
+* Downloads: number of times the item has been downloaded.
+* Last updated: date of when an item has been last edited, e.g. 26th Jun 2015 at 10:27 (Time Zone unkown).
+* Last updated by: user that last edited an item.
+* Views: number of UNIQUE? views of an item based on ??? (dobled clicks?).
+## Browse
+To browse the content of one specific item category at the time (e.g. Documents).
+* Query: to search for a specific query within the selected category. The search will attempt to find partial matches for the search term.
+* Faceted navigation: to refine search results based on multiple attributes available.
+### Condensed
+The condensed view has collapsible items that make it easier to view and browse more results in a single results page.
+### Default
+By default, the content is listed as cards, providing title and some basic information.
+### Table
+The table view shows more results at once. A small set of attributes about the items are shown as columns. This set can be extended and customised to include or remove attributes related to that item type, as well as choosing their order.
+## Overview
+Tab showing basic information about the selected item.
+## Related items
+Tab showing items related to the selected one.
+## Search
+To search for a specific query. The search will attempt to find partial matches for the search term in all item categories. The search can be restricted to one specific item category (e.g. Documents), as for browsing.
+### External
+The search can be extended to incude results from external online resources Linked? Integrated? with FAIRDOM-SEEK.
+### Advanced search with filtering
+To access the query and the faceted navigation option for one specific item category (e.g. Documents). 
+## Storage Usage
+Storage metrics, for Programmes and Projects, available to FAIRDOM-SEEK administrator. It provides the total size of all Programme or Project assets.
+## Change picture or avatar
+Custom graphic for a secific item.
+## (number)
+Number of items of a category (e.g. Documents) visible to you.
+## (number + number)
+* first number: number of items visible to you.
+* second number: number of items hidden from you.
 
 ## Integrations
 ### Single page
