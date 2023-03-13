@@ -375,5 +375,35 @@ Number of items of a category (e.g. Documents) visible to you.
 * second number: number of items hidden from you.
 
 ## Integrations
+### Bio.tools
+To fetch bio.tools identifiers.
+### Copasi
+To download a public SBML format model from FAIRDOM-SEEK to a locally installed Copasi application and start the simulation in Copasi.
+### JWS online
+To visualise the model in JWS online.
+### DOI minting
+To assign a DOI, which is a persistent identifier, to the snapshot, via DataCite.
+### LifeMonitor
+To apply LifeMonitor algorithm to workflows.
+### NeLS
+To ??
+### OpenBIS
+To fetch and register OpnBIS elements in FAIRDOM-SEEK.
+### Publish in Zenodo
+To publish a snapshot to Zenodo from FAIRDOM-SEEK.
+### Project folders
+Free folders within a project to group registered items.
 ### Single page
+To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only the Samples created via Single Page will be also shown in the tree view. <!---twice?-->
+
+<!--### Single page advanced
+To structure your research, within a Project, according to the ISA metadata framework in order to to export Investigations, including the related Studies and Assays, as ISA-JSON. Here, Investigation, Study and Assay are named ISA Investigation, ISA Study and ISA Assay.
+* Template for Sample Types: 
+From info icon: Templates are blueprints that can be reused and applied to Study and Assay for describing Samples. Templates must be associated with one or more Projects.
+
+  OR
+
+  Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays. The same Template can be (re)used multiple times to create Sample Types in different ISA Studies or ISA Assays.
+  
+  Needed here in glossary or not? Only integrations = button in GUI?-->
 
