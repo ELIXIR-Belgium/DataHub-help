@@ -3,7 +3,7 @@ layout: page
 title: Front page
 ---
 
-## About FAIRDOM-SEEK
+## About FAIRDOM-SEEK new
 
 The FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets, 
 models or simulations, processes and research outcomes. More details about SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org).
