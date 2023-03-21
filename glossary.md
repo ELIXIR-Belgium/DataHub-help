@@ -3,7 +3,7 @@ title: Glossary
 layout: page
 ---
 
-# FAIRDOM-SEEK glossary
+# FAIRDOM-SEEK Glossary
 Definition of terms used in FAIRDOM-SEEK.
 
 ## Profile
@@ -18,11 +18,13 @@ Definition of terms used in FAIRDOM-SEEK.
 * Subscriptions
 * Subscribe to additional Projects
 * Tools and techniques
+
 ### Email
 ### First name
 ### Identity
 * LS Login
 * GitHub
+
 ### Institution
 ### Manage identities
 ### My favourites
@@ -37,21 +39,25 @@ Definition of terms used in FAIRDOM-SEEK.
 * Publish your assets
 * Their tags
 * Tools (why not Tools and techniques as in Edit profile?)
+
 #### API Applications
 * Actions
 * Callback URL
 * Confidential?
 * Name
 * Redirect URI
+
 #### API Tokens
 * Actions
 * Created at
 * Title
+
 #### Authorized Applications
 * Actions
 * Application
 * Created at
 * Owner
+
 #### Edit Profile (same as Edit profile, why written differently?)
 #### Manage account (same as Change password)
 #### Manage identities
@@ -61,11 +67,13 @@ Definition of terms used in FAIRDOM-SEEK.
 * LS Login
 * Provider
 * UID
+
 #### OAuth Sessions
 * Actions
 * Authenticated at
 * Expires at
 * Provider
+
 ### My projects
 ### ORCID
 ### People
@@ -83,6 +91,7 @@ Section listing registered people, institutions, projects and programmes.
 ### Programme
 Programme is an umbrella to group one or more Projects (associated Projects).
 * Web page: link to an online page related to the Programme.
+
 ### Project
 From info icon: A Project represents research activities conducted by a group of one or more people.
 
@@ -93,6 +102,7 @@ From user guide: A Project represents a group of one or more people collaboratin
 * Internal web page: link to a intranet? will this be shown only to project member?
 * Public web page: link to a public web page related to the project.
 * Start date: start date of the project. what happen if retrospectively?
+
 ### Funding codes
 Codes of funded grants related to the Project or Programme.
 ### Funding details
@@ -104,6 +114,7 @@ A number of specialist roles to which users can be assigned.
 * Asset housekeeper: manage assets belonging to other people in the project who have been flagged as having become inactive in the project.
 * Asset gatekeeper: control whether assets within the project are made public.
 * PALs: people acting as liaisons between the development team of this software and the users of this software.
+
 ### Site managed programme
 Programme administered by the instance administrators (or platform administrators).
 ### Space
@@ -149,6 +160,7 @@ The ISA (Investigation, Study, Assay) is a general purpose framework for describ
   * Reset: (from info icon)resets the graph to its original state, reverting any changes to zoom or moved nodes.
 * Split: (from user guide)The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
 * Tree: (from info icon)display with a folder like tree view. (from user guide)The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
+
 ### Modelling analysis/analyses
 Modelling analysis refer specifically to simulations (in silico experiments) of models.
 ### New based on this one
@@ -176,6 +188,7 @@ Tab to interact with an ISA Study.
 ### Model
 * Model format
 * Model type
+
 ### Preferred execution or visualisation environment
 ### Placeholder
 ### Publication
@@ -195,6 +208,7 @@ From info icon: Events associated with one or more Projects, happening on specif
 * Event website: link to an online page related to the event.
 * Start date: date in which the activity starts. It doesn't affect the visibility of the activity after the start date. Or The activity will be shown even after the start date.
 * Time zone: time zone in which the activity occurs expressed as GMT offsets.
+
 ### New presentation
 To create a new presentation.
 ### Presentation
@@ -211,6 +225,7 @@ Attributes are qualities, features or characteristics of samples.
 * Title?: to make the value given to the attribute to act as title of the sample.
 * Type: to define the type of attribute.
 * Unit: quantity used for measuring something. <!--who can edit what CV?-->
+
 ### Attribute types
 The type of attribute determines the syntax of acceptable values for the attribute. <!--who can edit what CV?-->
 * Boolean: a true/false declaration; 1 or 0 can also be accepted.
@@ -239,6 +254,7 @@ The type of attribute determines the syntax of acceptable values for the attribu
 * Text: a longer alphanumerical entry (e.g. The 4th experiment in the batch, it was sampled late, so may not be as accurate).
 * URI: a Uniform Resource Identifier, which for example may relate to an ontology term
 * Web link: a link to a specific web page (e.g. http://fair-dom.org)
+
 ### Controlled Vocab
 * Title: name of the list of terms.
 * Description: description of the controlled vocabulary.
@@ -248,18 +264,21 @@ The type of attribute determines the syntax of acceptable values for the attribu
   * Label: name of the term as fetched from the ontology or given by the users.
   * URI: the link (URI) to the term as fetched from the ontology or given by the users.
   * Parent URI: the link (URI) to the root term of the term in question as fetched from the ontology or given by the users.
+
 ### Sample
 From info icon: A Sample is an entity (material or data) that can be converted into a new item (material or data) via a process (SOP), physical or computational. Samples must be associated with one or more Projects.
 ### Sample type
 From info icon: A Sample Type is a form with samples' attributes needed to describe and create samples in SEEK. A Sample Type must be associated with one or more Projects.
 * Spreadsheet template: to create a Sample Type in SEEK starting from an excel spreadsheet file. The name of the first sheet or tab must contain the word "sample". The Sample Type created based on the spreadsheet template has attributes based on the column heading in the first row of the first sheet.
 * Template.xlsx: to download a Sample Type registered in SEEK as an empty (without samples) spreadsheet "template.xlsx". Column heading and associated dropdown list will be downloaded as well.
+
 ### Template
 From info icon: Templates are blueprints that can be reused and applied to Study and Assay for describing Samples. Templates must be associated with one or more Projects.
 
 OR
 
 Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays. The same Template can be (re)used multiple times to create Sample Types in different ISA Studies or ISA Assays.
+
 ### View Samples
 To visualise samples from one Sample Type in a searchable table.
 * Export table: to export all samples from a Sample Type as .csv file.
@@ -272,6 +291,7 @@ To visualise samples from one Sample Type in a searchable table.
   * Given Name
   * Family Name
   * Affiliation
+
 ### Description
 ### Discussion channel
 ### Extended metadata
@@ -279,6 +299,7 @@ To visualise samples from one Sample Type in a searchable table.
 ### Organism
 * Display name
 * NCBI Taxonomy URI
+
 ### Position
 ### Publish
 ### Sharing
@@ -293,6 +314,7 @@ To visualise samples from one Sample Type in a searchable table.
 * Provider name
 * Provider's strain id
 * Synonym
+
 ### Tags
 ### Title
 
@@ -314,6 +336,7 @@ To visualise samples from one Sample Type in a searchable table.
   * Sharing link
 * Order: to arrange the order in which multiple Investigations, Studies and Assays are visually listed within Project, Investigation and Study, respectively.
 * Populate: to populate the structure (ISA, metadata what???) of the project via a compatible tsv file previosly uploaded to the same project.
+
 ## Add new
 To create new Investigation, Study and Assay from the overview page of a Project, Investigation or Study, respectively, even if the newly created item can be associated with a different Project, Investigation or Study from the one selected in the first place.
 
@@ -344,10 +367,12 @@ Unique identifier within the platform.
 * Last updated: date of when an item has been last edited, e.g. 26th Jun 2015 at 10:27 (Time Zone unkown).
 * Last updated by: user that last edited an item.
 * Views: number of UNIQUE? views of an item based on ??? (dobled clicks?).
+
 ## Browse
 To browse the content of one specific item category at the time (e.g. Documents).
 * Query: to search for a specific query within the selected category. The search will attempt to find partial matches for the search term.
 * Faceted navigation: to refine search results based on multiple attributes available.
+
 ### Condensed
 The condensed view has collapsible items that make it easier to view and browse more results in a single results page.
 ### Default

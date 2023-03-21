@@ -1,9 +1,17 @@
 ---
-title: SEEK User Guide - Templates
+title: SEEK User Guide - Templates For System Administrators
 layout: page
 ---
- 
-# Templates
+
+# Templates provided by FAIRDOM-SEEK administrator
+
+## The model in JSON
+## The attributes
+## The isa tag
+## How to make one
+## How to upload one
+
+<!--
 ## What are Templates
 Templates consist of a set of defined attributes (as columns) needed to create Sample Types, and therefore samples, in experiments (Study, Assay) of a Project in Single Page. Templates act as blueprints that can be shared, reused and applied for creating Sample Types in Studies and Assays, in Single Page.
 
@@ -47,3 +55,4 @@ Differences between:
 | Samples batch upload           | No                                                                                                                           | Yes, by pasting samples description using “Paste from Clipboard”                                                                                              | Yes, by uploading a spreadsheet containing samples description that matches an existing Sample Type as data file and then extracting samples |
 | Browsing Samples               | No, because Templates don’t contain Samples                                                                                  | Samples (across different Sample Types) can be queried by Template and Template attribute used to generate multiple Sample Types (Export query result as CSV) | Samples can be browsed only within one Sample Type (via “View samples”)                                                                      |
 | Exported in ISA.json file      | No, because Templates don’t contain Samples                                                                                  | Yes, possible for experiments (ISA) generated in Single Page, by applying Templates for Study and Assays                                                      | Not possible for experiments (ISA) that have not been created in Single Page                                                                 |
+-->
