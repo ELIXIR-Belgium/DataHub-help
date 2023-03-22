@@ -19,11 +19,13 @@ Definition of terms used in FAIRDOM-SEEK.
 * Subscribe to additional Projects
 * Tools and techniques
 
+
 ### Email
 ### First name
 ### Identity
 * LS Login
 * GitHub
+
 
 ### Institution
 ### Manage identities
@@ -40,6 +42,7 @@ Definition of terms used in FAIRDOM-SEEK.
 * Their tags
 * Tools (why not Tools and techniques as in Edit profile?)
 
+
 #### API Applications
 * Actions
 * Callback URL
@@ -47,16 +50,21 @@ Definition of terms used in FAIRDOM-SEEK.
 * Name
 * Redirect URI
 
+
+
 #### API Tokens
 * Actions
 * Created at
 * Title
+
+
 
 #### Authorized Applications
 * Actions
 * Application
 * Created at
 * Owner
+
 
 #### Edit Profile (same as Edit profile, why written differently?)
 #### Manage account (same as Change password)
@@ -68,11 +76,13 @@ Definition of terms used in FAIRDOM-SEEK.
 * Provider
 * UID
 
+
 #### OAuth Sessions
 * Actions
 * Authenticated at
 * Expires at
 * Provider
+
 
 ### My projects
 ### ORCID
@@ -92,6 +102,7 @@ Section listing registered people, institutions, projects and programmes.
 Programme is an umbrella to group one or more Projects (associated Projects).
 * Web page: link to an online page related to the Programme.
 
+
 ### Project
 From info icon: A Project represents research activities conducted by a group of one or more people.
 
@@ -102,6 +113,7 @@ From user guide: A Project represents a group of one or more people collaboratin
 * Internal web page: link to a intranet? will this be shown only to project member?
 * Public web page: link to a public web page related to the project.
 * Start date: start date of the project. what happen if retrospectively?
+
 
 ### Funding codes
 Codes of funded grants related to the Project or Programme.
@@ -114,6 +126,8 @@ A number of specialist roles to which users can be assigned.
 * Asset housekeeper: manage assets belonging to other people in the project who have been flagged as having become inactive in the project.
 * Asset gatekeeper: control whether assets within the project are made public.
 * PALs: people acting as liaisons between the development team of this software and the users of this software.
+
+
 
 ### Site managed programme
 Programme administered by the instance administrators (or platform administrators).
@@ -161,6 +175,8 @@ The ISA (Investigation, Study, Assay) is a general purpose framework for describ
 * Split: (from user guide)The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
 * Tree: (from info icon)display with a folder like tree view. (from user guide)The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
 
+
+
 ### Modelling analysis/analyses
 Modelling analysis refer specifically to simulations (in silico experiments) of models.
 ### New based on this one
@@ -179,22 +195,44 @@ Tab to interact with an ISA Study.
 
 ## Assets
 ### Attribution
-### Collection
-### Data file
-### Document
-### Event website
-### File template
-### Maintainer
-### Model
-* Model format
-* Model type
+Some assets are based on others, for example, a model may use data from an experimental assay, or a SOP may be a modified version of another. The attribution section allows you to specify when this is the case. As you type in the attribution, related assets will appear in a drop down menu.
 
-### Preferred execution or visualisation environment
+![add tags 1](/images/user-guide/add_attribution_1.png){:.screenshot}
+### Collection
+A Collection is a curated, ordered list of assets (Data Files, SOPs, etc.). They can be used to group assets together under a topic or a theme that don't belong in any other kind of hierarchy e.g. ISA.
+### Data file
+[Assay specific]
+Data files can be any file containing data relevant to an assay (raw data, processed data, calibration information etc). They can be in any format (word files, e-lab notebooks, code, annotated spreadsheets etc). Relevant data files can be linked directly to the assay via a dropdown menu.
+### Document
+A document contains information related to a Project. Examples are reports, meeting minutes, deliverables, milestones. A document must be associated with one or more Projects and can be linked to Assays and Events. A document can be part of a collection. There is no specified file format for a document.
+### Event website <!-- should this one be here under assets, it's also mentioned under Activities below? -->
+Link to an online page related to the event.
+### File template
+A File template describes conforming Data files. It may be annotated with information about the format and type of data in the Data files. Annotations are *not* about the File template itself. For example, a File template that is a Word document may describe conformant PNG images.
+### Maintainer
+One difference from other asset types is that Collections have “maintainers” instead of “creators”. Maintainers have “edit” rights to the Collection - the ability to add and remove items from the Collection.
+### Model
+A Model is a file containing a computer model of a biological or biochemical network or process. A Model file must be associated with one or more Projects.
+* Model format: e.g. SBML, CellML. If uploading directly through SEEK, you will be able to chose from a drop-down list
+* Model type: what kind of mathematical equations the model contains e.g. ODE, algebraic
+### Preferred execution or visualisation environment <!-- should this be a bullet under model header or is this field also somewhere else? -->
+How do you run a simulation on your model? This field should provide a link to a tool or resource which would allow you to run your model
 ### Placeholder
-### Publication
+[Assay specific] A Placeholder indicates data that will be consumed, used or produced when a Project is enacted. Placeholders are used when the structure of a Project is defined, but, because the Project has not yet been fully enacted, the data may not yet be known. When the data is known, the Data File may be associated with the Placeholder it satisfies. Placeholders may be used anywhere a Data File can be.
+### Publication <!-- the text is more of a how-to than a definition, perhaps rephrase and remove images? -->
+If your asset is directly related to a publication you can link the two together. Publications registered within your project can be selected from a drop-down menu. If the publication is in another project you need to check the box that says 'associate publications from other projects'.
+
+![add publication 1](/images/user-guide/add_publication_1.png){:.screenshot}
+
+When a publication is added a preview will be shown in the bottom right hand corner of SEEK. It can be removed easily if needed.
+
+![add publication 2](/images/user-guide/add_publication_2.png){:.screenshot}
 ### SOP
-### Workflow
-### Version History
+[Assay specific]
+SOPs are standard operating procedures which describe the protocol required to reproduce the assay. They can be in any format (word files, e-lab notebooks, code, annotated spreadsheets etc). Relevant SOPs can be linked directly to the assay via the dropdown menu.
+### Workflow <!-- couldn't find any definition -->
+### Version History <!-- don't know what to add here, took text from uploading-new-versions.md -->
+When there are minor modifications, improvements or error corrections to an Asset, a new version can be created. If the new version changes the original intention or purpose of the asset, you should instead create an entirely new asset.
 
 ## Activities
 ### Announce an Event
@@ -208,6 +246,7 @@ From info icon: Events associated with one or more Projects, happening on specif
 * Event website: link to an online page related to the event.
 * Start date: date in which the activity starts. It doesn't affect the visibility of the activity after the start date. Or The activity will be shown even after the start date.
 * Time zone: time zone in which the activity occurs expressed as GMT offsets.
+
 
 ### New presentation
 To create a new presentation.
@@ -225,6 +264,7 @@ Attributes are qualities, features or characteristics of samples.
 * Title?: to make the value given to the attribute to act as title of the sample.
 * Type: to define the type of attribute.
 * Unit: quantity used for measuring something. <!--who can edit what CV?-->
+
 
 ### Attribute types
 The type of attribute determines the syntax of acceptable values for the attribute. <!--who can edit what CV?-->
@@ -254,6 +294,8 @@ The type of attribute determines the syntax of acceptable values for the attribu
 * Text: a longer alphanumerical entry (e.g. The 4th experiment in the batch, it was sampled late, so may not be as accurate).
 * URI: a Uniform Resource Identifier, which for example may relate to an ontology term
 * Web link: a link to a specific web page (e.g. http://fair-dom.org)
+
+
 
 ### Controlled Vocab
 * Title: name of the list of terms.
@@ -292,6 +334,8 @@ To visualise samples from one Sample Type in a searchable table.
   * Family Name
   * Affiliation
 
+
+
 ### Description
 ### Discussion channel
 ### Extended metadata
@@ -299,6 +343,8 @@ To visualise samples from one Sample Type in a searchable table.
 ### Organism
 * Display name
 * NCBI Taxonomy URI
+
+
 
 ### Position
 ### Publish
