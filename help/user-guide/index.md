@@ -91,8 +91,8 @@ layout: page
   - [Creating templates for system administrators](templates-for-admin.html) <!--add and link-->
 
 - [Browsing samples](browsing.html#browsing-samples)
-  - [Browse samples by Sample Type](browsing.html#browsing-samples-by-sample-type)
-  - [Browse samples by templates](browsing.html#browsing-samples-by-templates)
+  - [Browse samples by Sample Type](browsing.html#browse-samples-by-sample-type)
+  - [Browse samples by templates](browsing.html#browse-samples-by-templates)
 
 
 ## General attributes and links
