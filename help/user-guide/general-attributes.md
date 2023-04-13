@@ -54,7 +54,7 @@ You can select an organism from the drop down menu.
 
 
 ## Sharing
-SEEK has fine grained sharing permissions. You can choose to share an asset in SEEK with just you, selected people within and outside of SEEK, your whole project, or publicly.
+FAIRDOM-SEEK has fine grained sharing permissions. You can choose to set an asset private (no access) or to share it with selected people, institutions, projects or programmes within SEEK, or to share it publicly. There are different levels of sharing permissions. "View" allows to see only the title and description of an asset and "Download" gives access to the content. "Edit" allows to change details of attributes of the asset. "Manage" gives rights to change project assignments, sharing permissions, creators or to add a temporary sharing link. Only with manage rights an asset can be deleted permanently.  
 
 ## Tags
 Tags are key words that are relevant in some way to the asset and its properties. They are used so relevant assets can be found more easily by other users using key-word searches. To include a tag you just type it into the box. Suggestions of tags will appear in a drop down menu as you type. You are free to use any free text for tags.

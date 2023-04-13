@@ -1,34 +1,26 @@
 ---
 layout: page
-title: Front page
+title: Get started
 ---
 
-## About FAIRDOM-SEEK
+# Get started
 
-The FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets, 
-models or simulations, processes and research outcomes. More details about SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org)
+## Glossary
+[Glossary containing the definition of terms used in DataHub](glossary.html). 
 
-For an example of FAIRDOM-SEEK please visit our [Demo](http://demo.seek4science.org).
+DataHub is an instance of the software FAIRDOM-SEEK (previosly called SEEK), therefore the glossary includes all terms used in FAIRDOM-SEEK.
 
-## Getting FAIRDOM-SEEK
+## Who should use DataHub and why
+Stakeholders in life sciences, such as:
+* research groups
+* research core facilities
+* research institutes 
+* research infrastructure providers
+* research consortia
 
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to [Getting FAIRDOM-SEEK](get-seek.html)
 
-## User Guides
+## How to organise your research in DataHub: use cases
+### [For research group and core facility](dh-organise.html#for-research-group-and-core-facility)
+### [For research groups](dh-organise.html#for-research-groups)
+### [For research core facilities](dh-organise.html#for-research-core-facilities)
 
-General documentation on how to use and administer FAIRDOM-SEEK can be found in our [User Guide](help/user-guide/index.html)
-
-## API Documentation
-
-Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction](/help/user-guide/api.html) 
-
-## Other Guides
-
-We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
-in our [Guides](help/index.html)
-
-## Contacting and Contributions
-
-There are [Contact Details](/contacting-us.html), should you wish to ask a question or make a suggestion.
-
-We also welcome contributions, so please visit our [Contributors Guide](/contributing.html)
