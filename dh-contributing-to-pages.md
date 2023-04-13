@@ -25,18 +25,19 @@ FAIRDOM-SEEK documentation (gh-pages branches) has been cloned in GitHub
 ## How to contribute to DataHub documentation
 
 ### General way of working
-1. Use [ELIXIR-Belgium/DataHub-help-test](https://github.com/ELIXIR-Belgium/DataHub-help-test) to propose changes to the DataHub documentation pages.
-2. DataHub team will review and approve/reject your changes.
-3. DataHub team will push the changes towards ELIXIR-Belgium/DataHub-help.
+1. Create [issues on ELIXIR-Belgium/DataHub-help](https://github.com/ELIXIR-Belgium/DataHub-help/issues).
+2. Use [ELIXIR-Belgium/DataHub-help-test](https://github.com/ELIXIR-Belgium/DataHub-help-test) to propose changes to the DataHub documentation pages via pull requests.
+3. DataHub team will review and approve/reject your changes.
+4. DataHub team will push the changes towards ELIXIR-Belgium/DataHub-help.
 
 ### via GitHub GUI
 1. Go to [ELIXIR-Belgium/DataHub-help-test](https://github.com/ELIXIR-Belgium/DataHub-help-test).
 2. Make the changes you want to propose.
-3. Open a pull request from your fork (e.g. `username:patch-N`, that is created by GitHub by default) towards [ELIXIR-Belgium/DataHub-help-test](https://github.com/ELIXIR-Belgium/DataHub-help-test) - `main' branch. You can click "compare across forks" button to check which repository-branch you are making your pull request to:
+3. Open a pull request from your fork (e.g. `username:patch-N`, that is created by GitHub by default) towards [ELIXIR-Belgium/DataHub-help-test](https://github.com/ELIXIR-Belgium/DataHub-help-test) - `main` branch. You can click the "*compare across forks*" button to check which repository-branch you are making your pull request to:
   * "head repository": it must be your fork; "compare": it must be your branch
-  * "base repository": it must be *ELIXIR-Belgium/DataHub-help-test*; "base": it must be *main*
+  * "base repository": it must be `ELIXIR-Belgium/DataHub-help-test`; "base": it must be `main`
 
-   *IMPORTANT: please make sure that your pull request is towards the base repository *ELIXIR-Belgium/DataHub-help-test* and the *main* branch, and not towards DataHub-help.*
+IMPORTANT: please make sure that your pull request is towards the base repository ELIXIR-Belgium/DataHub-help-**test** and the `main` branch, and not towards DataHub-help.
 
 4. Follow up via GitHub for comments from the DataHub team.
 
@@ -57,7 +58,7 @@ This is a general workflow in how to work on your own fork (copy) of the reposit
 * Commit and push to **remote** (e.g. username/DataHub-help).
 6. In GitHub, open a pull request and make sure to set ELIXIR-Belgium/DataHub-help-test main as base repository.
 
-   *IMPORTANT: please check that your pull request is against **DataHub-help-test main**  and not DataHub-help.*
+IMPORTANT: please check that your pull request is against DataHub-help-**test** main and not DataHub-help.
 
 
 <!--# Contributing to these pages
