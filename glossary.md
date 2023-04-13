@@ -196,8 +196,6 @@ Tab to interact with an ISA Study.
 ## Assets
 ### Attribution
 Some assets are based on others, for example, a model may use data from an experimental assay, or a SOP may be a modified version of another. The attribution section allows you to specify when this is the case. As you type in the attribution, related assets will appear in a drop down menu.
-
-![add tags 1](/images/user-guide/add_attribution_1.png){:.screenshot}
 ### Collection
 A Collection is a curated, ordered list of assets (Data Files, SOPs, etc.). They can be used to group assets together under a topic or a theme that don't belong in any other kind of hierarchy e.g. ISA.
 ### Data file
@@ -221,16 +219,11 @@ How do you run a simulation on your model? This field should provide a link to a
 [Assay specific] A Placeholder indicates data that will be consumed, used or produced when a Project is enacted. Placeholders are used when the structure of a Project is defined, but, because the Project has not yet been fully enacted, the data may not yet be known. When the data is known, the Data File may be associated with the Placeholder it satisfies. Placeholders may be used anywhere a Data File can be.
 ### Publication <!-- the text is more of a how-to than a definition, perhaps rephrase and remove images? -->
 If your asset is directly related to a publication you can link the two together. Publications registered within your project can be selected from a drop-down menu. If the publication is in another project you need to check the box that says 'associate publications from other projects'.
-
-![add publication 1](/images/user-guide/add_publication_1.png){:.screenshot}
-
-When a publication is added a preview will be shown in the bottom right hand corner of SEEK. It can be removed easily if needed.
-
-![add publication 2](/images/user-guide/add_publication_2.png){:.screenshot}
 ### SOP
 [Assay specific]
 SOPs are standard operating procedures which describe the protocol required to reproduce the assay. They can be in any format (word files, e-lab notebooks, code, annotated spreadsheets etc). Relevant SOPs can be linked directly to the assay via the dropdown menu.
-### Workflow <!-- couldn't find any definition -->
+### Workflow <!-- took the definition from Workflow hub, but it mentions Teams. Should that sentence be removed, should we mark this as instance specific, so that users in other instances don't get confused, or just ignore the added confusion this might cause? -->
+A Computational Workflow describes the complex multi-step methods that lead to new outputs. A Workflow must be associated with one or more Teams.
 ### Version History <!-- don't know what to add here, took text from uploading-new-versions.md -->
 When there are minor modifications, improvements or error corrections to an Asset, a new version can be created. If the new version changes the original intention or purpose of the asset, you should instead create an entirely new asset.
 
