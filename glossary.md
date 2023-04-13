@@ -457,7 +457,7 @@ To assign a DOI, which is a persistent identifier, to the snapshot, via DataCite
 ### LifeMonitor
 To apply LifeMonitor algorithm to workflows.
 ### NeLS
-To ??
+To enable linking of datasets stored in the Norwegian e-infrastructure for Life Sciences (NeLS), as well as upload and access of datasets to/from NeLS through SEEK
 ### OpenBIS
 To fetch and register OpnBIS elements in FAIRDOM-SEEK.
 ### Publish in Zenodo
