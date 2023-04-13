@@ -18,7 +18,7 @@ Technical details about the JSON structures and available endpoints
 
     http://<host>:<port>/api
 
-For example, on the FAIRDOMHub it is [https://fairdomhub.org/api](https://fairdomhub.org/api), 
+For example, on the DataHub it is [https://datahub-test.elixir-belgium.org/api](https://datahub-test.elixir-belgium.org/api), 
 or for a local running instance it would be [http://localhost:3000/api](http://localhost:3000/api)
 
 There are also some examples that are available as Jupyter notebook scripts. They were created for training events, and give
@@ -29,7 +29,7 @@ a general overview and walk through some typical scenarios. They can be found at
 
 The API supports [Basic Authentication](https://en.wikipedia.org/wiki/Basic_access_authentication), OAuth and API Tokens.
 
-More details can be found in [FAIRDOMHub API Docs](https://fairdomhub.org/api#section/Authentication)
+More details can be found in [DataHub API Docs](https://datahub-test.elixir-belgium.org/api#section/Authentication)
 
 The API can also be used without any authentication,
 in which case only publicly viewable information will
