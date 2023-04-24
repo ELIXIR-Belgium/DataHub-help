@@ -1,46 +1,58 @@
 ---
-title: Glossary
+title: Definitions
 layout: page
 ---
 
-# FAIRDOM-SEEK Glossary
+# FAIRDOM-SEEK definitions
 Definition of terms used in FAIRDOM-SEEK.
 
 ## Profile
+A profile corresponds to information in SEEK about a person that can be a registered user (with an account) or a non-registered user (without an account).
+### People or Person
+Existing profile(s) in SEEK.
 ### Account
-### Address
-### Change password
-### City
-### Country
+An account identifies a registered user.
+<!--### Address-->
+<!--### Change password-->
+<!--### City-->
+<!--### Country-->
+<!--### Last name-->
+<!--### Logout-->
+<!--### Email-->
+<!--### First name-->
+
 ### Edit profile
 * Email announcements
 * Expertise
+* ORCID
+* Phone
+* Skype name
 * Subscriptions
 * Subscribe to additional Projects
 * Tools and techniques
+* Web page
 
 
-### Email
-### First name
 ### Identity
-* LS Login
+Each different way you login is considered an “identity”. Multiple identities can be connected to one SEEK account.
+* LS Login: Life Science Login (previous ELIXIR-AAI)
 * GitHub
 
 
 ### Institution
-### Manage identities
+Where a registered user is employed or work or a registered user's affiliation for a specific Project.
 ### My favourites
-### Last name
-### Logout
+Where favourite searches are saved after dragging the icon over to your Favourites.
 ### My items
+It shows all items related to your profile.
 ### My profile
-* Batch permission changes
-* Joined
-* Location (why not Country?)
-* Login name
-* Publish your assets
-* Their tags
-* Tools (why not Tools and techniques as in Edit profile?)
+* Batch permission changes: to change the sharing policy and permissions for your assets in batch.
+* Joined: date and time of the registration.
+* Location: same as Country indicated in Profile.
+* Login name: name chosen by the registered user.
+* Publish your assets: to change the sharing policy and permissions for your assets to Public in batch.
+* Their tags: tags used by the profile to tag items.
+* Tools: Same as "Tools and techniques" in Edit Profile. <!--(why not Tools and techniques as in Edit profile?)-->
 
 
 #### API Applications
@@ -66,15 +78,17 @@ Definition of terms used in FAIRDOM-SEEK.
 * Owner
 
 
-#### Edit Profile (same as Edit profile, why written differently?)
-#### Manage account (same as Change password)
+<!--#### Edit Profile (same as Edit profile in dropdown menu, why written differently?)-->
+#### Manage account
+Same as Change password from the dropdown menu of your account.
 #### Manage identities
-* Actions
-* Created at
-* GitHub
-* LS Login
-* Provider
-* UID
+To add, edit and delete the ways to login to a SEEK account.
+* Actions: "Unlink" button to unlink a certain identity from a SEEK account.
+* Created at: day and time of the creation of an identity.
+* GitHub: link a login through Github to a SEEK account.
+* LS Login: link a login through Life Science Login (previous ELIXIR AAI) to a SEEK account.
+* Provider: provider of the login service (LDAP, GitHub, LS Login)
+* UID: unique identifier
 
 
 #### OAuth Sessions
@@ -85,15 +99,10 @@ Definition of terms used in FAIRDOM-SEEK.
 
 
 ### My projects
-### ORCID
-### People
-### Person
-### Phone
-### Profile
-### Provide feedback
-### Skype name
-### Web page
+List of all Projects that the registered user administers and is a member of.
 
+### Provide feedback
+Form to provide feedback (also anonymously) about the platform to the provider team.
 ## Directory
 Alias for Yellow pages. Section listing registered people, institutions, projects and programmes.
 ## Yellow pages
@@ -393,9 +402,9 @@ To send an email to the submitter of the item to show your interest for it.
 ## Single page
 To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only the Samples created via Single Page will be also shown in the tree view.
 ## Subscribe
-???
+<!--???-->
 ## Unsubscribe
-???
+<!--???-->
 ## View content
 To visualise the content of the file in the browser.
 ## SEEK ID
