@@ -5,10 +5,15 @@ title: Get started
 
 # Get started
 
-## Glossary
-[Glossary containing the definition of terms used in DataHub](glossary.html). 
+DataHub is a web platform for the management of samples metadata in fundamental research. It is designed to facilitate scientists and members of research groups better documenting samples throughout the experimental steps, in compliance with the requirements of research core facilities and end-repositories.
 
-DataHub is an instance of the software FAIRDOM-SEEK (previosly called SEEK), therefore the glossary includes all terms used in FAIRDOM-SEEK.
+DataHub is an instance of the software FAIRDOM-SEEK (previosly called SEEK).
+
+
+## Definitions
+[Definition of terms used in DataHub](definitions.html).
+
+DataHub is an instance of the software FAIRDOM-SEEK (previosly called SEEK), therefore definitions of all terms used in FAIRDOM-SEEK are included.
 
 ## Who should use DataHub and why
 Stakeholders in life sciences, such as:
