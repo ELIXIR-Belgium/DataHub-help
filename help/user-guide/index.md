@@ -5,31 +5,32 @@ layout: page
 
 # FAIRDOM-SEEK user documentation
 
-## Your profile
+## Profile
 - [Registering in SEEK](registering.html)
 - [Logging into SEEK](login.html)
   - [Logging into SEEK via ELIXIR AAI](aai.html)
 - [Managing your account](managing-account.html)
   - [Managing your identities/alternative login methods](managing-identities.html)
 - [Editing your profile](editing-profile.html)
-- Favourites
+- Favourites: drag and drop your favourite searchers.
 
 ## Yellow pages
+(aliases: Directory)
 - [Browsing content](browsing.html)
 - [Creating and managing your own Programmes](programme-creation-and-management.html)
 - [Creating a Project](create-a-project.html)
 - [Joining a Project](join-a-project.html)
 - [Project Dashboard](project-dashboard.html)
-- [Viewing Project in Single Page](viewing-project-in-single-page.html)
+- [Viewing Project in Experiment View](viewing-project-in-single-page.html)
 - [Specialist user roles and their capabilities](roles.html)
 
-  _Specialist user roles_
+Specialist user roles
   - [Programme administrator](roles.html#programme-administrator)
   - [Project administrator](roles.html#project-administrator)
   - [Asset housekeeper](roles.html#asset-housekeeper)
   - [Asset gatekeeper](roles.html#asset-gatekeeper)
-  
-  _Capabilities_
+
+Capabilities
   - [Assign people to Project roles](administer-project-members.html#assign-people-to-project-roles)
   - [Flag when a person becomes inactive in a Project](administer-project-members.html#flag-when-a-person-becomes-inactive-in-a-project)
   - [Create Organisms](adding-admin-items.html#creating-organisms)
@@ -45,12 +46,13 @@ layout: page
   - [Creating a Modelling analysis](generating-the-isa-structure.html#creating-a-modelling-analysis)
 - [ISA Overview Graph](isa-overview.html)
 
-- [Designing experiments in Single Page](designing-experiments-in-single-page.html)
-  - [Creating an Investigation in Single Page](designing-experiments-in-single-page.html#1-creating-an-isa-investigation-in-single-page)
-  - [Creating a Study in Single Page](designing-experiments-in-single-page.html#2-creating-an-isa-study-in-single-page)
-  - [Creating an Assay in Single Page](designing-experiments-in-single-page.html#5-creating-a-first-isa-assay-in-single-page)
-- [ISA in Single Page advanced](isa-single-page-advanced.html) <!--view isa in single page or view samples in single page?-->
-- [Export experiments from Single Page as ISA-JSON](exporting-experiments-from-single-page.html)
+- [Designing an ISA-JSON compliant experiment](designing-experiments-isajson-compliant.html)
+  - [Creating an ISA Investigation](designing-experiments-isajson-compliant.html#1-creating-an-isa-investigation)
+  - [Creating an ISA Study](designing-experiments-isajson-compliant.html#2-creating-an-isa-study)
+  - [Creating an ISA Assay](designing-experiments-isajson-compliant.html#5-creating-an-assay-stream)
+- [ISA-JSON compliant experiment](isa-json-compliant-experiment.html)
+- [Export experiments as ISA-JSON](exporting-experiments-as-isajson.html)
+- [Experiment Sample Templates](isa-json-compliant-experiment.html#experiment-sample-templates)
 
 - [Making an Investigation, Study or Assay citable](investigation-snapshots.html)
   - [Making public](investigation-snapshots.html#making-public)
@@ -79,20 +81,15 @@ layout: page
   - [Create a Sample](create-sample.html)
   - [Legacy Biosamples](legacy-biosamples.html)
 
-
-- [Samples in Single Page](isa-single-page-advanced.html#samples-in-single-page)
-  - [Viewing samples in Single Page](create-sample-single-page-advanced.html#viewing-samples-in-single-page)
-  - [Create Study Sources in Single Page](create-sample-single-page-advanced.html#create-study-sources)
-  - [Create Study Samples in Single Page](create-sample-single-page-advanced.html#create-study-samples)
-  - [Create samples in a first Assay Single Page](create-sample-single-page-advanced.html#create-samples-in-a-first-assay)
-
-- [Templates](isa-single-page-advanced.html#templates)
-  - [Apply templates to design experiments in Single Page](designing-experiments-in-single-page.html)
-  - [Creating templates for system administrators](templates-for-admin.html) <!--add and link-->
+- [Samples in ISA-JSON compliant experiments](isa-json-compliant-experiment.html#samples-in-isa-json-compliant-experiment)
+  - [Viewing samples in ISA-JSON compliant Experiments](create-sample-isajson-compliant.html#viewing-samples-isajson-compliant-experiments)
+  - [Create Study Sources](create-sample-isajson-compliant.html#create-study-sources)
+  - [Create Study Samples](create-sample-isajson-compliant.html#create-study-samples)
+  - [Create Assay Samples](create-sample-isajson-compliant.html#create-assay-samples)
 
 - [Browsing samples](browsing.html#browsing-samples)
   - [Browse samples by Sample Type](browsing.html#browse-samples-by-sample-type)
-  - [Browse samples by templates](browsing.html#browse-samples-by-templates)
+  - [Browse samples by Experiment Sample Template](browsing.html#browse-samples-by-experiment-sample-template)
 
 
 ## General attributes and links
@@ -123,15 +120,15 @@ layout: page
 ## Integrations
 - [Using SEEK with openBIS](openbis.html)
 - [Using Copasi in SEEK](copasi-button.html)
-- [Single Page view](viewing-project-in-single-page.html)
-- [Single Page advanced](isa-single-page-advanced.html)
+- [Experiment view](viewing-project-in-single-page.html) (or Single page)
+- [Compliance with ISA-JSON schemas](isa-json-compliant-experiment.html)
 
 ## User guide for API
 - [API Introduction](api.html)
 
 ## Contribute
 - [Reporting a bug or feature request](/tech/reporting-bugs-and-features.html)
-- [Contributing to these SEEK Documents](/contributing.html) <!-- with this here. it is instance specific.-->
+- [Contributing to these SEEK Documents](/contributing.html)
 
 
 

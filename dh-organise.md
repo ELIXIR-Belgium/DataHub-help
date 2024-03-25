@@ -19,7 +19,7 @@ title: How to organise your research in DataHub
 
 ![genome-assembly](/images/usecases-dh/genome-assembly.jpg){:.screenshot}
 
-## For research groups
+<!--## For research groups-->
 
 
-## For research core facilities
+<!--## For research core facilities-->
