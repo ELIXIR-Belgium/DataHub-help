@@ -57,7 +57,7 @@ The ISA Study Sources, Samples and ISA Assay Samples tables are Sample Types ass
 
 ## Platform-wide and project specific Experiment Sample Templates
 
-Experiment Sample Templates can be [provided by the platform administrator](isajson-templates-for-admin.html) or created by Project members based on an existing template. Templates provided by the platform administrator are platform-wide (or instance-wide) and visible to every registered user. Project-specific Experiment Sample Templates created by Project members are subject to sharing permissions.
+Experiment Sample Templates can be [provided by the platform administrator](isajson-templates.html#for-system-administrator) or created by Project members based on an existing template. Templates provided by the platform administrator are platform-wide (or instance-wide) and visible to every registered user. Project-specific Experiment Sample Templates created by Project members are subject to sharing permissions.
 
 ## Experiment Sample Template characteristics
 
@@ -113,5 +113,5 @@ Same as for material output assay sample(s), but for assays specifically designe
 [Browsing samples by templates](browsing.html#browsing-samples-by-experiment-sample-templates)
 
 # ISA JSON export
-## [Export Experiments as ISA-JSON](exporting-experiments-as-isajson.html)
+[Export Experiments as ISA-JSON](exporting-experiments-as-isajson.html)
 

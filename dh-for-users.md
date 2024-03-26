@@ -16,6 +16,7 @@ For more specific documentation related to DataHub, users should follow the step
 ### [Overview](dh-research-group.html#overview)
 ### [Group leader](dh-research-group.html#group-leader)
 ### [Researcher](dh-research-group.html#researcher)
+### [Creator of templates](dh-research-group.html#creator-of-templates)
 
 
 <!--## For core facility-->

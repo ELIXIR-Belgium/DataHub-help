@@ -39,7 +39,7 @@ items from the lists you need to hold CTRL as you select them.
 By default email is disabled, but if you are able to you can configure it to
 enable SEEK to send emails - such are emails about changes within your
 project, notification emails, feedback emails and notifications about errors.
-You can configure email under Admin->Site configuration->Enable/disable
+You can configure email under Admin->Configuration->Enable/disable
 features. Part way down that page there is a checkbox "Email enabled" that you
 should select. This reveals some SMTP settings that you need to fill out. Any
 that are not needed can be left blank. The meaning of the settings are:
@@ -68,7 +68,7 @@ below (comma or space seperated).
 
 ## Configuring BioPortal
 
-[BioPortal](http://bioportal.bioontology.org/) is a service used in SEEK for
+[BioPortal](https://bioportal.bioontology.org/) is a service used in SEEK for
 supporting and searching ontologies, which we communicate with via its API.
 However, the API requires an api-key that we are unable to distribute with
 SEEK. To be able to link organisms with NCBI terms, or search for organisms
@@ -77,24 +77,30 @@ for more widespread uses of ontologies - such as for the Assay and Technology
 types, and for tagging with semantic terms.
 
 To get an api-key you first need to register with BioPortal at
-http://bioportal.bioontology.org/accounts/new, and once registered and logged
+https://bioportal.bioontology.org/accounts/new, and once registered and logged
 in your api-key should be shown under Account details. More information is
 available at
-http://www.bioontology.org/wiki/index.php/BioPortal_REST_services.
+https://www.bioontology.org/wiki/index.php/BioPortal_REST_services.
 
-In SEEK, you apply the BioPortal api-key under the Admin->Site
-Configuration->Additional Settings.
+In SEEK, you apply the BioPortal api-key under the Admin->Configuration->Settings.
 
 ## Configuring DOI and PubMed search
 
 To be able to support adding publications using a
-[PubMed](http://www.ncbi.nlm.nih.gov/pubmed) ID or DOI to your SEEK
+[PubMed](https://www.ncbi.nlm.nih.gov/pubmed) ID or DOI to your SEEK
 installation, you need to do 2 things.
 
-*   For PubMed you simply need to add your email address under Admin->Site
-    Configuration->Additional Settings
+*   For PubMed you simply need to add your email address under Admin->Configuration->Settings
 *   For DOI - you need to register your email address with
-    [CrossRef](http://www.crossref.org/) at
-    http://www.crossref.org/requestaccount/ and then provide that email to
-    SEEK under Admin->Site Configuration->Additional Settings
+    [CrossRef](https://www.crossref.org/) at
+    https://www.crossref.org/requestaccount/ and then provide that email to
+    SEEK under Admin->Configuration->Settings
+
+## Configuring Session Store Timeout
+
+The timeout period is set to 1 hour by default. This means that a user may be logged out after 1 hour, if they haven't selected "Remember Me"
+when logging in, and could lead to lost information if spending a long time filling out a form.
+
+Usually, 1 hour is sufficient, but the timeout can be updated under Admin->Configuration->Settings.
+
 

@@ -1,5 +1,5 @@
 ---
-title: install
+title: Install Guide
 layout: page
 redirect_from: "/install.html"
 ---
@@ -14,7 +14,7 @@ For how to install and run using Docker, which in many cases is simpler and quic
 
 If you have installed SEEK, please take a moment to fill out our very
 short,optional [SEEK Registration
-Form](http://seek4science.org/seek-registration)
+Form](https://seek4science.org/seek-registration)
 
 If you have any problems or questions, you should contact us. The following
 link will give you details on how to [Contact Us](/contacting_us.html)
@@ -23,17 +23,19 @@ SEEK is based upon the Ruby on Rails platform. Although the information on
 this page should provide you with everything you need to get a basic
 installation of SEEK up and running, some background reading on Ruby on Rails
 would be beneficial if it is new to you. Documentation and resources
-describing Ruby on Rails can be found at http://rubyonrails.org/documentation
+describing Ruby on Rails can be found at https://rubyonrails.org/documentation
 .
 
-SEEK is built upon the 5.2 version of Rails, and requires Ruby 2.6.
+SEEK is built upon Rails, and requires Ruby 3.1.
 
 We recommend that you run SEEK on a Linux system. This guide is based on an
-[Ubuntu (18.04 LTS)](http://releases.ubuntu.com/18.04/) system. However, running on other Linux distributions the
+[Ubuntu (20.04 LTS)](https://releases.ubuntu.com/20.04/) system. However, running on other Linux distributions the
 main difference is the name of the required packages that have to be installed
 for that distribution, other than that the steps will be the same. If you want
 to install on different distribution or version please visit [Other
 Distributions](other-distributions.html) and see if it is listed there.
+
+
 
 You will need to have *sudo* access on the machine you are installing SEEK, or
 be able to login as root. You will also need an active internet connection
@@ -48,34 +50,33 @@ These are the packages required to run SEEK with Ubuntu 20.04 (Desktop or
 Server). For other distributions or versions please visit our [Other
 Distributions](other-distributions.html) notes.
 
-You should run an update first
+First add a repo which contains python versions that may not be available in the default repositories
+
+    sudo apt install software-properties-common
+    sudo add-apt-repository ppa:deadsnakes/ppa
+
+Then ensure everything is up-to-date
 
     sudo apt update
     sudo apt upgrade
 
 Now install the packages:
 
-    sudo apt install mysql-server
-
-Pay attention to what you use for the 'MySQL root' password when requested -
-you will need this later.
-
-The remaining packages are:
-
-    sudo apt install build-essential git imagemagick libcurl4-gnutls-dev libgmp-dev \
+    sudo apt install build-essential cmake git graphviz imagemagick libcurl4-gnutls-dev libgmp-dev \
         libmagick++-dev libmysqlclient-dev libpq-dev libreadline-dev libreoffice libssl-dev \
-        libxml++2.6-dev libxslt1-dev nodejs openjdk-8-jdk openssh-server poppler-utils zip
+        libxml++2.6-dev libxslt1-dev mysql-server nodejs openjdk-11-jdk openssh-server poppler-utils zip \
+        python3.9-dev python3.9-distutils python3-pip
 
 Installing these packages now will make installing Ruby easier later on:
 
     sudo apt install autoconf automake bison curl gawk libffi-dev libgdbm-dev \
         libncurses5-dev libsqlite3-dev libyaml-dev sqlite3
         
-SEEK's Solr implementation currently requires Java 8, so you may need to switch the system's default Java runtime:
+SEEK's Solr implementation currently requires Java 11, so you may need to switch the system's default Java runtime:
 
     sudo update-alternatives --config java
     
-...and select the version named `/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java` or similar.
+...and select the version named `/usr/lib/jvm/java-11-openjdk-amd64/bin/java` or similar.
 
 ## Development or Production?
 
@@ -91,7 +92,7 @@ Now you are ready for installing SEEK. You can either install directly from Gith
 ### Install directly from Github
 
 If you wish to install directly from GitHub, the latest version of SEEK is
-tagged as *(v{{ site.current_seek_version }})*. To fetch this run:
+tagged as *v{{ site.current_seek_version }}*. To fetch this run:
 
     git clone https://github.com/seek4science/seek.git
     cd seek/
@@ -117,25 +118,21 @@ Ruby and RubyGems version. Although you can use the version that comes with
 your linux distribution, it is more difficult to control the version you use
 and keep up to date.
 
-To install RVM follow the steps at <https://rvm.io/rvm/install> . The current
-basic installation method is to run:
+To install RVM on Ubuntu there is package available described at <https://github.com/rvm/ubuntu_rvm>, the steps being
 
-    \curl -L https://get.rvm.io | bash
+    sudo apt-add-repository -y ppa:rael-gc/rvm
+    sudo apt-get update
+    sudo apt-get install rvm
+    sudo usermod -a -G rvm $USER
 
-to save restarting your shell run:
+... the guide recommends rebooting here, but logging in and out again usually works.
 
-    source ~/.rvm/scripts/rvm
-
-if you already had RVM installed, bring it up to date with:
-
-    rvm get stable
+Other ways to install RVM can be found at <https://rvm.io/rvm/install> .
 
 now install the appropriate version of Ruby
 
     rvm install $(cat .ruby-version)
 
-you may be asked for your password so that some additional packages can be
-installed. You will then need to wait for Ruby to be downloaded and compiled.
 
 ## Installing Gems
 
@@ -143,9 +140,20 @@ First install bundler, which is used to manage gem versions
 
     gem install bundler
 
-Next install the ruby gems SEEK needs:
+Next install the ruby gems SEEK needs ( for production see [Bundler Configuration](install-production.html#bundler-configuration) )
 
-    bundle install --deployment --without development test
+    bundle install
+
+## Install Python dependencies
+
+First, a specific version of `setuptools` needs to be installed to avoid an issue when installing dependencies
+
+    python3.9 -m pip install setuptools==58
+
+Then the other dependencies can be installed
+
+    python3.9 -m pip install -r requirements.txt
+    
 
 ## Setting up the Database
 
@@ -159,10 +167,9 @@ default version of this and then edit it:
 Change this for each environment (development,production,test).
 
 Now you need to grant permissions for the user and password you just used
-(changing the example below appropriately). You will need the root password
-you created for mySQL when installing the package. e.g:
+(changing the example below appropriately). 
 
-    > mysql -uroot -p
+    > sudo mysql
     Enter password:
     Welcome to the MySQL monitor.  Commands end with ; or \g.
     Your MySQL connection id is 1522
@@ -213,19 +220,6 @@ and to stop run:
 you can also restart with
 
     bundle exec rake seek:workers:restart
-
-### Starting and Stopping the SOFFICE service
-
-SEEK uses the soffice service provided by
-[LibreOffice](https://www.libreoffice.org/) to convert various document
-formats to PDF and Text - to allow them to be viewed in a web browser, and to
-make them indexable to the search. To start soffice run:
-
-    soffice --headless --accept="socket,host=127.0.0.1,port=8100;urp;" --nofirststartwizard > /dev/null 2>&1 &
-
-and to stop it run:
-
-    killall -15 soffice
 
 ## Starting SEEK
 

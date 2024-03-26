@@ -45,7 +45,7 @@ You change the port, and image in the docker-compose.yml by editing
         ports:
               - "3000:3000"
               
-## Proxy through NGINX              
+## Proxy through NGINX or Apache             
               
 An alternative to changing the port (particularly if running several instances on
 same machine), you can proxy through Apache or Nginx. E.g. for Nginx you would configure a virtual host
@@ -63,6 +63,15 @@ like the following:
             proxy_pass         http://127.0.0.1:3000;
         }
     }
+
+for Apache the virtual host would include:
+
+    UseCanonicalName on
+    ProxyPreserveHost on
+    <Location />
+         ProxyPass   http://127.0.0.1:3000/ Keepalive=On
+         ProxyPassReverse http://127.0.0.1:3000/
+    </Location>
     
 You would also want to configure for HTTPS (port 443), and would strongly recommend using [Lets Encrypt](https://letsencrypt.org/) for free SSL certificates. 
     
@@ -134,3 +143,16 @@ Start with a clean Docker Compose setup described above. Running the script, pas
 
     wget https://github.com/seek4science/seek/raw/seek-{{ site.current_docker_tag }}/script/import-docker-data.sh
     sh ./import-docker-data.sh /tmp/seek-migration/
+    
+## Using a sub-URI
+
+If you wish to run SEEK under a sub-URI (e.g. https://yourdomain.com/seek/) you can use the alternative `docker-compose-relative-root.yml` file:
+
+    docker-compose -f docker-compose-relative-root.yml up -d
+    
+To customize the sub-URI (`/seek` by default), change the `RAILS_RELATIVE_URL_ROOT` variable in that file in *both* the `seek` and `seek_workers` sections.
+
+Please note if adding/changing/removing the `RAILS_RELATIVE_URL_ROOT` on an existing container, you will have to recompile assets and clear the cache:
+
+    docker exec seek bundle exec rake assets:precompile
+    docker exec seek bundle exec rake tmp:clear

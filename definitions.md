@@ -12,88 +12,20 @@ A profile corresponds to information in SEEK about a person that can be a regist
 Existing profile(s) in SEEK.
 ### Account
 An account identifies a registered user.
-<!--### Address-->
-<!--### Change password-->
-<!--### City-->
-<!--### Country-->
-<!--### Last name-->
-<!--### Logout-->
-<!--### Email-->
-<!--### First name-->
-<!-->
-<!--### Edit profile
-* Email announcements
-* Expertise
-* ORCID
-* Phone
-* Skype name
-* Subscriptions
-* Subscribe to additional Projects
-* Tools and techniques
-* Web page
--->
+
 ### Identity
 Each different way you login is considered an “identity”. Multiple identities can be connected to one SEEK account.
 * LS Login: Life Science Login (previous ELIXIR-AAI)
 * GitHub
+
 ### Institution
 Where a registered user is employed or work or a registered user's affiliation for a specific Project.
+
 ### My favourites
 Where favourite searches are saved after dragging the icon over to your Favourites.
+
 ### My Items
 It shows all items related to your profile.
-<!--### My profile
-* Batch permission changes: to change the sharing policy and permissions for your assets in batch.
-* Joined: date and time of the registration.
-* Location: same as Country indicated in Profile.
-* Login name: name chosen by the registered user.
-* Publish your assets: to change the sharing policy and permissions for your assets to Public in batch.
-* Their tags: tags used by the profile to tag items.
-* Tools: Same as "Tools and techniques" in Edit Profile.(why not Tools and techniques as in Edit profile?)
-
-
-#### API Applications
-* Actions
-* Callback URL
-* Confidential?
-* Name
-* Redirect URI
-
-
-
-#### API Tokens
-* Actions
-* Created at
-* Title
-
-
-
-#### Authorized Applications
-* Actions
-* Application
-* Created at
-* Owner
-
-
-#### Edit Profile (same as Edit profile in dropdown menu, why written differently?)
-#### Manage account
-Same as Change password from the dropdown menu of your account.
-#### Manage identities
-To add, edit and delete the ways to login to a SEEK account.
-* Actions: "Unlink" button to unlink a certain identity from a SEEK account.
-* Created at: day and time of the creation of an identity.
-* GitHub: link a login through Github to a SEEK account.
-* LS Login: link a login through Life Science Login (previous ELIXIR AAI) to a SEEK account.
-* Provider: provider of the login service (LDAP, GitHub, LS Login)
-* UID: unique identifier
-
-
-#### OAuth Sessions
-* Actions
-* Authenticated at
-* Expires at
-* Provider-->
-
 
 ### My projects
 List of all Projects that the registered user administers and is a member of.
@@ -116,15 +48,6 @@ Any element in SEEK must be associated to a Project (except for Programme), dire
 The purpose of the Project level can be decided by the user.
 
 The utilization of the Project feature in SEEK depends on the users and the organization of their research. Users have the flexibility to determine the purpose of the Project level based on their needs and the way their research is organized.
-<!--From info icon: A Project represents research activities conducted by a group of one or more people.
-From user guide: A Project represents a group of one or more people collaborating together on a particular activity.
-* Associated programme: select the one programme under which the project will be grouped.
-* Default License: how is it different from just "license" in other objects? (same for sharing policy)
-* End date: end date of the project. What happen after the date?
-* Internal web page: link to a intranet? will this be shown only to project member?
-* Public web page: link to a public web page related to the project.
-* Start date: start date of the project. what happen if retrospectively?-->
-
 
 ### Funding codes
 Codes of funded grants related to the Project or Programme.
@@ -137,15 +60,14 @@ A number of specialist roles to which users can be assigned.
 * Asset housekeeper: manage assets belonging to other people in the project who have been flagged as having become inactive in the project.
 * Asset gatekeeper: control whether assets within the project are made public.
 * PALs: people acting as liaisons between the development team of this software and the users of this software.
+
 ### Site managed programme
 Programme administered by the instance administrators (or platform administrators).
 ### Space
 Alias for Programme. An umbrella to group one or more Teams.
 ### Team
 Alias for Project.
-<!--From info icon: research activities conducted by a group of one or more people.
-
-From user guide: represents a group of one or more people collaborating together on a particular activity.-->
+<!--From info icon: research activities conducted by a group of one or more people. From user guide: represents a group of one or more people collaborating together on a particular activity.-->
 
 ## Experiments
 Scientific procedures undertaken to make a discovery, test a hypothesis or demonstrate a fact.
@@ -180,12 +102,12 @@ To insert a new assay between two existing ones.
 ### ISA
 The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#study).
 ### ISA Overview
-* Fullscreen: (from info icon)Toogle between full screen and normal size. (from user guide)A full screen view of the tree can be shown by toggling on the Fullscreen button, and can be reverted by clicking again or pressing the ESC key.
-* Graph: (from info icon)display as a graph, showing the overall ISA structure. (from user guide)show a graphical view of highlighting the item within the network.
-  * all nodes: (from info icon) toogle between expanding all nodes in the graph, or showing just the nearest neighbours.
-  * Reset: (from info icon)resets the graph to its original state, reverting any changes to zoom or moved nodes.
-* Split: (from user guide)The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
-* Tree: (from info icon)display with a folder like tree view. (from user guide)The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
+* Fullscreen: Toogle between full screen and normal size. A full screen view of the tree can be shown by toggling on the Fullscreen button, and can be reverted by clicking again or pressing the ESC key.
+* Graph: It displays as a graph, showing the overall ISA structure. It shows a graphical view of highlighting the item within the network.
+  * all nodes: Toogle between expanding all nodes in the graph, or showing just the nearest neighbours.
+  * Reset: It resets the graph to its original state, reverting any changes to zoom or moved nodes.
+* Split: The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
+* Tree: It displays with a folder like tree view. The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
 
 
 
@@ -245,15 +167,6 @@ When there are minor modifications, improvements or error corrections to an Asse
 To create a new event.
 ### Event
 From info icon: Events associated with one or more Projects, happening on specified dates and at a specific location, actual or virtual can be registered in SEEK.
-<!--* Address: address in which the event takes place.
-* City: name of the City in which the event takes place.
-* Country: name of the Country in which the event takes place.
-* End date: date in which the activity ends. It doesn't affect the visibility of the activity after the end date. Or The activity will be shown even after the end date.
-* Event website: link to an online page related to the event.
-* Start date: date in which the activity starts. It doesn't affect the visibility of the activity after the start date. Or The activity will be shown even after the start date.
-* Time zone: time zone in which the activity occurs expressed as GMT offsets.-->
-
-
 ### New presentation
 To create a new presentation.
 ### Presentation
@@ -269,7 +182,8 @@ Attributes are qualities, features or characteristics of samples.
 * Required?: to make the attribute mandatory.
 * Title?: to make the value given to the attribute to act as title of the sample.
 * Type: to define the type of attribute.
-* Unit: quantity used for measuring something. <!--who can edit what CV?-->
+* Unit: quantity used for measuring something.
+* ISA tag: ISA tags define the relation of each attribute to either the sample (output) or the protocol, following the categories specified by the ISA model.
 
 
 ### Attribute types
@@ -326,17 +240,14 @@ Experiment Sample Templates act as blueprints to create Sample Types within ISA 
 To visualise samples from one Sample Type in a searchable table.
 * Export table: to export all samples from a Sample Type as .csv file.
 
-## General attributes
-<!--### Citation
+<!--## General attributes
+-### Citation
 ### Creator
 * Additional credit
 * New Creator
   * Given Name
   * Family Name
   * Affiliation
-
-
-
 ### Description
 ### Discussion channel
 ### Extended metadata
@@ -344,9 +255,6 @@ To visualise samples from one Sample Type in a searchable table.
 ### Organism
 * Display name
 * NCBI Taxonomy URI
-
-
-
 ### Position
 ### Publish
 ### Sharing
@@ -361,7 +269,6 @@ To visualise samples from one Sample Type in a searchable table.
 * Provider name
 * Provider's strain id
 * Synonym
-
 ### Tags
 ### Title-->
 
@@ -394,13 +301,12 @@ Page containing various charts presenting metrics on activity within the program
 ## Download
 To download assets for which sharing permissions allows the download for a user.
 ## Experiment view
+(aliases: Single Page)
 To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only samples created within ISA-JSON compliant experiments are shown in Experiment view.
 ## Overview
 Tree view of the items associated with the project. The associated Programme is also shown.
 ## Request Contact
 To send an email to the submitter of the item to show your interest for it.
-<!--## Subscribe
-## Unsubscribe-->
 ## View content
 To visualise the content of the file in the browser.
 ## SEEK ID
@@ -464,6 +370,7 @@ To publish a snapshot to Zenodo from FAIRDOM-SEEK.
 <!--### Project folders
 Free folders within a project to group registered items.-->
 ### Single page
+(aliases: Experiment View)
 To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page.
 ### Compliance with ISA-JSON schemas
 Whether the option to comply with the ISA-JSON format specification is enabled. The user will be able to create Investigation, Study and Assay according to the ISA-JSON specification, and to export information as an ISA-JSON file. Requires 'Single Page enabled', 'ISA enabled' and 'Samples enabled'. 'SOPs enabled' is recommended.
