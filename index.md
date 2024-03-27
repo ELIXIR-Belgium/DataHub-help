@@ -1,34 +1,28 @@
 ---
 layout: page
-title: Front page
+title: Get started
 ---
 
-## About FAIRDOM-SEEK
+# Get started
 
-The FAIRDOM-SEEK platform is a web-based resource for sharing heterogeneous scientific research datasets, 
-models or simulations, processes and research outcomes. More details about SEEK can be found on the [FAIRDOM-SEEK Website](https://seek4science.org)
+DataHub is a web platform designed to facilitate the management of sample metadata. It aims to help scientists and research groups better document samples throughout experimental steps, ensuring compliance with the requirements of research core facilities, end-repositories, or any other standard metadata.
 
-For an example of FAIRDOM-SEEK please visit our [Demo](http://demo.seek4science.org).
+## Definitions
 
-## Getting FAIRDOM-SEEK
+DataHub is an instance of the FAIRDOM-SEEK software (previously known as SEEK) and shares the same documentation. Consequently, all definitions of terms utilized within FAIRDOM-SEEK, including those not directly visible within DataHub but present in other instances of SEEK, are encompassed in this list of definitions.
 
-To find out how to install FAIRDOM-SEEK on your own machine, or install FAIRDOM-SEEK as a Virtual Machine, please go to [Getting FAIRDOM-SEEK](get-seek.html)
+[Definition of terms used in DataHub](definitions.html).
 
-## User Guides
+## Who should use DataHub and why
+Stakeholders in life sciences.
+* Research groups: for sample documentation throughout experimental steps.
+* Research core facilities: to share sample metadata templates.
+* Research institutes or infrastructure providers: to provide a sample metadata platform. 
+* Research consortia: for sample documentation according to standardised templates.
 
-General documentation on how to use and administer FAIRDOM-SEEK can be found in our [User Guide](help/user-guide/index.html)
 
-## API Documentation
+## How to organise your research in DataHub: use cases
+### [For research group and core facility](dh-organise.html#for-research-group-and-core-facility)
+<!--### [For research groups](dh-organise.html#for-research-groups)-->
+<!--### [For research core facilities](dh-organise.html#for-research-core-facilities)-->
 
-Details on how to get started using the Application Programme Interface (API) can be found in the [API Introduction](/help/user-guide/api.html) 
-
-## Other Guides
-
-We also have other information for topics related to FAIRDOM-SEEK, including Metadata, ISA, and controlled vocabularies, which can be found
-in our [Guides](help/index.html)
-
-## Contacting and Contributions
-
-There are [Contact Details](/contacting-us.html), should you wish to ask a question or make a suggestion.
-
-We also welcome contributions, so please visit our [Contributors Guide](/contributing.html)
