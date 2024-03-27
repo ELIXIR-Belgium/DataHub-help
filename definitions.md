@@ -12,117 +12,42 @@ A profile corresponds to information in SEEK about a person that can be a regist
 Existing profile(s) in SEEK.
 ### Account
 An account identifies a registered user.
-<!--### Address-->
-<!--### Change password-->
-<!--### City-->
-<!--### Country-->
-<!--### Last name-->
-<!--### Logout-->
-<!--### Email-->
-<!--### First name-->
-
-### Edit profile
-* Email announcements
-* Expertise
-* ORCID
-* Phone
-* Skype name
-* Subscriptions
-* Subscribe to additional Projects
-* Tools and techniques
-* Web page
-
 
 ### Identity
 Each different way you login is considered an “identity”. Multiple identities can be connected to one SEEK account.
 * LS Login: Life Science Login (previous ELIXIR-AAI)
 * GitHub
 
-
 ### Institution
 Where a registered user is employed or work or a registered user's affiliation for a specific Project.
+
 ### My favourites
 Where favourite searches are saved after dragging the icon over to your Favourites.
-### My items
+
+### My Items
 It shows all items related to your profile.
-### My profile
-* Batch permission changes: to change the sharing policy and permissions for your assets in batch.
-* Joined: date and time of the registration.
-* Location: same as Country indicated in Profile.
-* Login name: name chosen by the registered user.
-* Publish your assets: to change the sharing policy and permissions for your assets to Public in batch.
-* Their tags: tags used by the profile to tag items.
-* Tools: Same as "Tools and techniques" in Edit Profile. <!--(why not Tools and techniques as in Edit profile?)-->
-
-
-#### API Applications
-* Actions
-* Callback URL
-* Confidential?
-* Name
-* Redirect URI
-
-
-
-#### API Tokens
-* Actions
-* Created at
-* Title
-
-
-
-#### Authorized Applications
-* Actions
-* Application
-* Created at
-* Owner
-
-
-<!--#### Edit Profile (same as Edit profile in dropdown menu, why written differently?)-->
-#### Manage account
-Same as Change password from the dropdown menu of your account.
-#### Manage identities
-To add, edit and delete the ways to login to a SEEK account.
-* Actions: "Unlink" button to unlink a certain identity from a SEEK account.
-* Created at: day and time of the creation of an identity.
-* GitHub: link a login through Github to a SEEK account.
-* LS Login: link a login through Life Science Login (previous ELIXIR AAI) to a SEEK account.
-* Provider: provider of the login service (LDAP, GitHub, LS Login)
-* UID: unique identifier
-
-
-#### OAuth Sessions
-* Actions
-* Authenticated at
-* Expires at
-* Provider
-
 
 ### My projects
 List of all Projects that the registered user administers and is a member of.
 
 ### Provide feedback
 Form to provide feedback (also anonymously) about the platform to the provider team.
+
 ## Directory
 Alias for Yellow pages. Section listing registered people, institutions, projects and programmes.
+
 ## Yellow pages
 Section listing registered people, institutions, projects and programmes.
+
 ### Programme
 Programme is an umbrella to group one or more Projects (associated Projects).
 * Web page: link to an online page related to the Programme.
 
-
 ### Project
-From info icon: A Project represents research activities conducted by a group of one or more people.
+Any element in SEEK must be associated to a Project (except for Programme), directly or indirectly.
+The purpose of the Project level can be decided by the user.
 
-From user guide: A Project represents a group of one or more people collaborating together on a particular activity. 
-* Associated programme: select the one programme under which the project will be grouped.
-* Default License: how is it different from just "license" in other objects? (same for sharing policy)
-* End date: end date of the project. What happen after the date?
-* Internal web page: link to a intranet? will this be shown only to project member?
-* Public web page: link to a public web page related to the project.
-* Start date: start date of the project. what happen if retrospectively?
-
+The utilization of the Project feature in SEEK depends on the users and the organization of their research. Users have the flexibility to determine the purpose of the Project level based on their needs and the way their research is organized.
 
 ### Funding codes
 Codes of funded grants related to the Project or Programme.
@@ -136,30 +61,28 @@ A number of specialist roles to which users can be assigned.
 * Asset gatekeeper: control whether assets within the project are made public.
 * PALs: people acting as liaisons between the development team of this software and the users of this software.
 
-
-
 ### Site managed programme
 Programme administered by the instance administrators (or platform administrators).
 ### Space
 Alias for Programme. An umbrella to group one or more Teams.
 ### Team
 Alias for Project.
-
-From info icon: research activities conducted by a group of one or more people.
-
-From user guide: represents a group of one or more people collaborating together on a particular activity.
+<!--From info icon: research activities conducted by a group of one or more people. From user guide: represents a group of one or more people collaborating together on a particular activity.-->
 
 ## Experiments
 Scientific procedures undertaken to make a discovery, test a hypothesis or demonstrate a fact.
 ### Assay
-From user guide: An assay is in general an experiment that converts either a material or data sample, into a new material or data sample, via a protocol. 
+<!--From user guide:-->An assay is in general an experiment that converts either a material or data sample, into a new material or data sample, via a protocol. 
 
-From info icon: An Assay is in general the application of a process (SOP) that converts an input material or data (incoming samples) into a new material or data (outgoing samples). An Assay must belong to one Study.
+<!--From info icon:-->An Assay is in general the application of a process (SOP) that converts an input material or data (incoming samples) into a new material or data (outgoing samples). An Assay must belong to one Study.
 ### Assay design
-Tab to interact with an ISA Assay.
+Tab to interact with protocols and samples in an ISA-JSON compliant experiment.
 ### Design Assay
 Design and create an Assay according to the [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#assay) (ISA Assay). An ISA Assay corresponds to one "process node" of the ISA metadata framework.
-<!--Design Investigation: currently named Create investigation-->
+### Design Assay stream
+An assay stream constitutes a structured sequence of sequential assays, interconnected through the flow of samples. Within an assay stream, the sample output of one assay serves as the input for the subsequent one. Each assay stream aligns with a single Assay in the ISA metadata framework. It is typically associated with one specific technology or technique, such as Metabolomics or Sequencing.
+### Design Investigation
+Design and create an Investigation according to the [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#study) (ISA Investigation).
 ### Design Study
 Design and create a Study according to the [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#study) (ISA Study).
 ### Design the next Assay
@@ -167,22 +90,24 @@ Design and create an ISA Assay in which the inputs (or incomimg samples) are the
 ### Experimental assay
 Experimental assays refer specifically to laboratory assays.
 ### Experiment overview
-Overview of all Sources and Samples from the Study or from all precedent Assays, in a searchable table.
+Overview of all Sources and Samples from the ISA Study or from all precedent ISA Assays within a Study, in a searchable table.
 ### Export ISA
 Export the metadata of one Investigation, including the related Studies and Assays, in [ISA-JSON format](https://isa-specs.readthedocs.io/en/latest/isajson.html).
+### Insert new Assay
+To insert a new assay between two existing ones.
 ### Investigation
-From user guide: The investigation is a high level concept that links related studies.
+<!--From user guide:-->The investigation is a high level concept that links related studies.
 
-From info icon: Investigation is a high level description of the research carried out within a particular Project.
+<!--From info icon:-->Investigation is a high level description of the research carried out within a particular Project.
 ### ISA
-The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. <!-- add link?to ISA framework?-->
+The ISA (Investigation, Study, Assay) is a general purpose framework for describing how experiments relate to one another. [ISA metadata framework specifications](https://isa-specs.readthedocs.io/en/latest/isamodel.html#study).
 ### ISA Overview
-* Fullscreen: (from info icon)Toogle between full screen and normal size. (from user guide)A full screen view of the tree can be shown by toggling on the Fullscreen button, and can be reverted by clicking again or pressing the ESC key.
-* Graph: (from info icon)display as a graph, showing the overall ISA structure. (from user guide)show a graphical view of highlighting the item within the network.
-  * all nodes: (from info icon) toogle between expanding all nodes in the graph, or showing just the nearest neighbours.
-  * Reset: (from info icon)resets the graph to its original state, reverting any changes to zoom or moved nodes.
-* Split: (from user guide)The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
-* Tree: (from info icon)display with a folder like tree view. (from user guide)The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
+* Fullscreen: Toogle between full screen and normal size. A full screen view of the tree can be shown by toggling on the Fullscreen button, and can be reverted by clicking again or pressing the ESC key.
+* Graph: It displays as a graph, showing the overall ISA structure. It shows a graphical view of highlighting the item within the network.
+  * all nodes: Toogle between expanding all nodes in the graph, or showing just the nearest neighbours.
+  * Reset: It resets the graph to its original state, reverting any changes to zoom or moved nodes.
+* Split: The Split view provides a combination of the Tree and Graph view, with the tree shown on the right. 
+* Tree: It displays with a folder like tree view. The tree view is the default view, and shows the ISA structure as folders, similar to a file browser.
 
 
 
@@ -197,10 +122,10 @@ Sources table is an interactive table (dynamic tables) for creating, editing and
 ### Samples table
 Samples table is an interactive table (dynamic tables) for creating, editing and deleting Study Samples and Assay samples.
 ### Study
-From user guide: A study is a particular biological hypothesis or analysis.
+<!--From user guide: A study is a particular biological hypothesis or analysis.-->
 From info icon: A Study is a particular hypothesis, which you are planning to test, using various techniques. A Study must belong to one Investigation and it can contain one or more Assays.
 ### Study design
-Tab to interact with an ISA Study.
+Tab to interact with protocols, sources and samples in an ISA-JSON compliant experiment.
 
 ## Assets
 ### Attribution
@@ -222,6 +147,7 @@ One difference from other asset types is that Collections have “maintainers”
 A Model is a file containing a computer model of a biological or biochemical network or process. A Model file must be associated with one or more Projects.
 * Model format: e.g. SBML, CellML. If uploading directly through SEEK, you will be able to chose from a drop-down list
 * Model type: what kind of mathematical equations the model contains e.g. ODE, algebraic
+
 ### Preferred execution or visualisation environment <!-- should this be a bullet under model header or is this field also somewhere else? -->
 How do you run a simulation on your model? This field should provide a link to a tool or resource which would allow you to run your model
 ### Placeholder
@@ -241,19 +167,10 @@ When there are minor modifications, improvements or error corrections to an Asse
 To create a new event.
 ### Event
 From info icon: Events associated with one or more Projects, happening on specified dates and at a specific location, actual or virtual can be registered in SEEK.
-* Address: address in which the event takes place.
-* City: name of the City in which the event takes place.
-* Country: name of the Country in which the event takes place.
-* End date: date in which the activity ends. It doesn't affect the visibility of the activity after the end date. Or The activity will be shown even after the end date.
-* Event website: link to an online page related to the event.
-* Start date: date in which the activity starts. It doesn't affect the visibility of the activity after the start date. Or The activity will be shown even after the start date.
-* Time zone: time zone in which the activity occurs expressed as GMT offsets.
-
-
 ### New presentation
 To create a new presentation.
 ### Presentation
-From info icon: Presentations associated with one or more Projects can be registered in SEEK.
+<!--From info icon:-->Presentations associated with one or more Projects can be registered in SEEK.
 
 ## Samples
 ### Attributes
@@ -265,7 +182,8 @@ Attributes are qualities, features or characteristics of samples.
 * Required?: to make the attribute mandatory.
 * Title?: to make the value given to the attribute to act as title of the sample.
 * Type: to define the type of attribute.
-* Unit: quantity used for measuring something. <!--who can edit what CV?-->
+* Unit: quantity used for measuring something.
+* ISA tag: ISA tags define the relation of each attribute to either the sample (output) or the protocol, following the categories specified by the ISA model.
 
 
 ### Attribute types
@@ -286,7 +204,6 @@ The type of attribute determines the syntax of acceptable values for the attribu
 * MetaNetX compartement
 * MetaNetX reaction
 * NCBI ID
-* Ontology: as for Controlled Vocabulary. <!--special in dynamic table since it accept other values?-->
 * Real number: a number that can be a fraction and include a decimal place, e.g 1.25
 * Registered Data file
 * Registered Sample: the acceptable value for the attribute is an internal link to one sample registered within SEEK, from one selected sample type.
@@ -295,9 +212,7 @@ The type of attribute determines the syntax of acceptable values for the attribu
 * String: a sequence of characters (e.g Blue).
 * Text: a longer alphanumerical entry (e.g. The 4th experiment in the batch, it was sampled late, so may not be as accurate).
 * URI: a Uniform Resource Identifier, which for example may relate to an ontology term
-* Web link: a link to a specific web page (e.g. http://fair-dom.org)
-
-
+* Web link: a link to a specific web page (e.g. http://fair-dom.org).
 
 ### Controlled Vocab
 * Title: name of the list of terms.
@@ -310,34 +225,29 @@ The type of attribute determines the syntax of acceptable values for the attribu
   * Parent URI: the link (URI) to the root term of the term in question as fetched from the ontology or given by the users.
 
 ### Sample
-From info icon: A Sample is an entity (material or data) that can be converted into a new item (material or data) via a process (SOP), physical or computational. Samples must be associated with one or more Projects.
+<!--From info icon:-->A Sample is an entity (material or data) that can be converted into a new item (material or data) via a process (SOP), physical or computational. Samples must be associated with one or more Projects.
 ### Sample type
-From info icon: A Sample Type is a form with samples' attributes needed to describe and create samples in SEEK. A Sample Type must be associated with one or more Projects.
+<!--From info icon:-->A Sample Type is a form with samples' attributes needed to describe and create samples in SEEK. A Sample Type must be associated with one or more Projects.
 * Spreadsheet template: to create a Sample Type in SEEK starting from an excel spreadsheet file. The name of the first sheet or tab must contain the word "sample". The Sample Type created based on the spreadsheet template has attributes based on the column heading in the first row of the first sheet.
 * Template.xlsx: to download a Sample Type registered in SEEK as an empty (without samples) spreadsheet "template.xlsx". Column heading and associated dropdown list will be downloaded as well.
 
-### Template
-From info icon: Templates are blueprints that can be reused and applied to Study and Assay for describing Samples. Templates must be associated with one or more Projects.
+### Experiment Sample Templates
+<!--From info icon:-->Experiment Sample Templates are blueprints that can be reused and applied to Study and Assay for describing Samples within experiments compliant with the ISA framework (ISA-JSON compliant). Experiment Sample Templates must be associated with one or more Projects.
 
-OR
-
-Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays. The same Template can be (re)used multiple times to create Sample Types in different ISA Studies or ISA Assays.
+Experiment Sample Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays. The same Experiment Sample Template can be (re)used multiple times to create Sample Types in different ISA Studies or ISA Assays.
 
 ### View Samples
 To visualise samples from one Sample Type in a searchable table.
 * Export table: to export all samples from a Sample Type as .csv file.
 
-## General attributes
-### Citation
+<!--## General attributes
+-### Citation
 ### Creator
 * Additional credit
 * New Creator
   * Given Name
   * Family Name
   * Affiliation
-
-
-
 ### Description
 ### Discussion channel
 ### Extended metadata
@@ -345,9 +255,6 @@ To visualise samples from one Sample Type in a searchable table.
 ### Organism
 * Display name
 * NCBI Taxonomy URI
-
-
-
 ### Position
 ### Publish
 ### Sharing
@@ -362,9 +269,8 @@ To visualise samples from one Sample Type in a searchable table.
 * Provider name
 * Provider's strain id
 * Synonym
-
 ### Tags
-### Title
+### Title-->
 
 ## Actions
 * Administer Project members
@@ -373,7 +279,6 @@ To visualise samples from one Sample Type in a searchable table.
   * Pending changes: list of changes that have not been confirm yet. Pending changes will not be applied if not confirmed.
   * Project members: list of all members of the project, grouped by institution. A project member can be listed multiple times if he/she has been added to the project using multiple institutions.
 * Administer Project members roles: to assign or remove administrative roles within the platform.
-  * roles here?
 * Delete: to delete an item. An item can only be deleted if there are no items or people associated with it.
 * Edit: to edit metadata of an item.
 * Make a snapshot: a way of freezing a version of a public Investigation, Study or Assay in its current state, so that even if changes are made over time, the frozen version can be accessed. Public related items can be included or excluded in the snapshot.
@@ -383,7 +288,7 @@ To visualise samples from one Sample Type in a searchable table.
   * Creators
   * Sharing link
 * Order: to arrange the order in which multiple Investigations, Studies and Assays are visually listed within Project, Investigation and Study, respectively.
-* Populate: to populate the structure (ISA, metadata what???) of the project via a compatible tsv file previosly uploaded to the same project.
+<!--* Populate: to populate the structure (ISA, metadata what???) of the project via a compatible tsv file previosly uploaded to the same project.-->
 
 ## Add new
 To create new Investigation, Study and Assay from the overview page of a Project, Investigation or Study, respectively, even if the newly created item can be associated with a different Project, Investigation or Study from the one selected in the first place.
@@ -395,16 +300,13 @@ Short report about items that have been shared outside of the project. <!--more 
 Page containing various charts presenting metrics on activity within the programme or project over a given time period.
 ## Download
 To download assets for which sharing permissions allows the download for a user.
+## Experiment view
+(aliases: Single Page)
+To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only samples created within ISA-JSON compliant experiments are shown in Experiment view.
 ## Overview
 Tree view of the items associated with the project. The associated Programme is also shown.
 ## Request Contact
 To send an email to the submitter of the item to show your interest for it.
-## Single page
-To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only the Samples created via Single Page will be also shown in the tree view.
-## Subscribe
-<!--???-->
-## Unsubscribe
-<!--???-->
 ## View content
 To visualise the content of the file in the browser.
 ## SEEK ID
@@ -414,7 +316,7 @@ Unique identifier within the platform.
 * Downloads: number of times the item has been downloaded.
 * Last updated: date of when an item has been last edited, e.g. 26th Jun 2015 at 10:27 (Time Zone unkown).
 * Last updated by: user that last edited an item.
-* Views: number of UNIQUE? views of an item based on ??? (dobled clicks?).
+* Views: number of <!--UNIQUE?--> views of an item. <!--based on ??? (dobled clicks?).-->
 
 ## Browse
 To browse the content of one specific item category at the time (e.g. Documents).
@@ -437,6 +339,7 @@ To search for a specific query. The search will attempt to find partial matches 
 The search can be extended to incude results from external online resources Linked? Integrated? with FAIRDOM-SEEK.
 ### Advanced search with filtering
 To access the query and the faceted navigation option for one specific item category (e.g. Documents). 
+
 ## Storage Usage
 Storage metrics, for Programmes and Projects, available to FAIRDOM-SEEK administrator. It provides the total size of all Programme or Project assets.
 ## Change picture or avatar
@@ -464,19 +367,12 @@ To enable linking of datasets stored in the Norwegian e-infrastructure for Life 
 To fetch and register OpnBIS elements in FAIRDOM-SEEK.
 ### Publish in Zenodo
 To publish a snapshot to Zenodo from FAIRDOM-SEEK.
-### Project folders
-Free folders within a project to group registered items.
+<!--### Project folders
+Free folders within a project to group registered items.-->
 ### Single page
-To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. Only the Samples created via Single Page will be also shown in the tree view. <!---twice?-->
+(aliases: Experiment View)
+To visualise Experiments (Investigations, Studies, Assays) and the linked SOPs in the Project in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page.
+### Compliance with ISA-JSON schemas
+Whether the option to comply with the ISA-JSON format specification is enabled. The user will be able to create Investigation, Study and Assay according to the ISA-JSON specification, and to export information as an ISA-JSON file. Requires 'Single Page enabled', 'ISA enabled' and 'Samples enabled'. 'SOPs enabled' is recommended.
 
-<!--### Single page advanced
-To structure your research, within a Project, according to the ISA metadata framework in order to to export Investigations, including the related Studies and Assays, as ISA-JSON. Here, Investigation, Study and Assay are named ISA Investigation, ISA Study and ISA Assay.
-* Template for Sample Types: 
-From info icon: Templates are blueprints that can be reused and applied to Study and Assay for describing Samples. Templates must be associated with one or more Projects.
-
-  OR
-
-  Templates act as blueprints to create Sample Types within ISA Studies and ISA Assays. The same Template can be (re)used multiple times to create Sample Types in different ISA Studies or ISA Assays.
-  
-  Needed here in glossary or not? Only integrations = button in GUI?-->
-
+If enabled, an option appears to upload default Experiment Sample Templates to specify instance-wide ISA-JSON compliant schemas.

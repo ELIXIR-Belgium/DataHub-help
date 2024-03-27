@@ -3,18 +3,11 @@
  layout: page
 ---
 
-# Single page view
+# Experiment View
 
-A Project can be visualised in Single Page by selecting the button “Single Page” at the top right corner of a roject page.
-In Single Page, Experiments (Investigation, Study, Assay), Samples and the linked SOPs in a Project are shown in a tree view on the left side of the page, while each item’s details are shown and accessible from the center of the page. As more items are added, the tree will expand.
+A Project and the associated Experiments (Investigation, Study, Assay) can be visualised in "Experiment View" by selecting the button “Experiment View” at the top right corner of the page.
 
-(screenshot)
+In Experiment View, Experiments (Investigation, Study, Assay) compliant to the ISA framework (ISA-JSON compliant: true) display their Samples and linked protocols in a tree view on the left side of the page. Each item's details are shown and accessible from the center of the page, and as more items are added, the tree will expand.
 
-# Tree view for advanced (separately?)
-
-## Source table
-## samples
-## Protocol
-## Sample table
-## Experiment overview
+![experiment view](/images/user-guide/experiment_view_01.png){:.screenshot}
 

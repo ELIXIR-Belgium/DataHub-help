@@ -41,12 +41,19 @@ When upgrading between patch versions, it should only be necessary to run
     bundle install
     bundle exec rake seek:upgrade 
 
-## Steps to upgrade from 1.11.x to 1.12.x
+## Steps to upgrade from 1.13.x to 1.14.x
 
-**Note** the requirement to setup Apache Solr, which is no longer bundled together with FAIRDOM-SEEK.
+### Dependencies
+
+You will need to update Python to version 3.9
+
+    sudo apt install python3.9-dev python3.9-distutils
+
+you may remove 3.7 unless it is used for other applications. If unsure there is no harm leaving it installed
+
+    sudo apt remove python3.7-dev python3.7-distutils
 
 ### Set RAILS_ENV
-              
 
 **If upgrading a production instance of SEEK, remember to set the RAILS_ENV first**
 
@@ -54,26 +61,30 @@ When upgrading between patch versions, it should only be necessary to run
 
 ### Stopping services before upgrading
 
-    bundle exec rake seek:workers:stop
-    bundle exec rake sunspot:solr:stop
+    bundle exec rake seek:workers:stop 
 
-### Updating from GitHub
+### Getting the upgrade
+
+The steps to fetch the upgrade will be different depending on whether it was originally installed directly
+from Github or via a downloaded tarball.
+
+#### Updating from GitHub
 
 If you have an existing installation linked to our GitHub, you can fetch the
 files with:
 
     git pull
-    git checkout v1.12.0
+    git checkout v1.14.2
 
-### Updating using the tarball
+#### Updating using the tarball
 
 You can download the file from
-<https://github.com/seek4science/seek/archive/v1.12.0.tar.gz> You can
+<https://github.com/seek4science/seek/archive/v1.14.2.tar.gz> You can
 unpack this file using:
 
-    tar zxvf seek-1.12.0.tar.gz
+    tar zxvf seek-1.14.2.tar.gz
     mv seek seek-previous
-    mv seek-1.12.0 seek
+    mv seek-1.14.2 seek
     cd seek/
 
 and then copy across your existing filestore and database configuration file
@@ -81,7 +92,22 @@ from your previous installation and continue with the upgrade steps. The
 database configuration file you would need to copy is _config/database.yml_,
 and the filestore is simply _filestore/_
 
-If you have a modified _config/sunspot.yml_ you will also need to copy that across.
+### Install Python dependencies
+
+First, a specific version of `setuptools` needs to be installed to avoid an issue when installing dependencies
+
+    python3.9 -m pip install setuptools==58
+
+Then the other dependencies can be installed
+
+    python3.9 -m pip install -r requirements.txt
+
+### Upgrading Ruby
+
+It is necessary to upgrade to Ruby 3.1.4. If you are using [RVM](https://rvm.io/) (according to the [Installation Guide](install.html) )you should be prompted to install during the standard installation steps that follow.
+If you are not prompted you can install with the command:
+
+    rvm install $(cat .ruby-version)
 
 ### Doing the upgrade
 
@@ -93,9 +119,9 @@ content.
 
     cd . #this is to allow RVM to pick up the ruby and gemset changes
     gem install bundler
-    bundle install --deployment --without development test
+    bundle install
     bundle exec rake seek:upgrade
-    bundle exec rake assets:precompile # this task will take a while       
+    bundle exec rake assets:precompile # this task will take a while
 
 ### Update Cron Services
 
@@ -103,18 +129,10 @@ SEEK requires some cron jobs for periodic background jobs to run. To update thes
 
     bundle exec whenever --update-crontab
 
-### Setting up Apache Solr
-
-The [Apache Solr Search Engine](https://solr.apache.org/) need to be set up separately. 
-It is relatively straightforward and there are instructions on how to do this in [Setting Up Solr](setting-up-solr).
-
-
 ### Restarting background job services
 
-    bundle exec rake sunspot:solr:start
-    bundle exec rake tmp:clear  
-
-           
+    bundle exec rake seek:workers:start
+ 
 ---
     
 ## Earlier upgrade notes
