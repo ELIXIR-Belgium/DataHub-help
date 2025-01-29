@@ -1,15 +1,16 @@
 /*-----Theme colors-----*/
 $white: #fff;
-$primary: #2363cc; 
+$primary: #4c6478; 
 /* $indigo; #392b99; */
 /* $alertblue: #d7e1f3; */
 /* $brightblue: #8cddf6; */
-$secondary: #090378;
+$secondary: darken($primary, 20%);
 $gray-600: #74767f;
 $blue: #376ac3;
 $light: #f0f5fd;
 $light-x: #e3e1e4;
 $dark: #080b0f;
+$fa-icon-color: #f4b334ed;
 
 /*-----Custom values for Bootstrap variables-----*/
 $component-active-bg: $primary;
