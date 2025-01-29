@@ -7,13 +7,14 @@ redirect_to: "https://fair-dom.org/contact"
 ---
 {% include callout.html type="warning" content="This page is out-of-date and may be removed." %}
 
-We have a number of ways you can contact us.
+We have a number of ways you can contact us:
 
 
-## Contact the FAIRDOM community
+## Email
 
-For any questions and suggestions related to FAIRDOM projects, tools, standards and events please visit the [FAIRDOM contact us page](https://fair-dom.org/contact).
+For general support you can contact us through [datacore.datahub@vib.be](mailto:datacore.datahub@vib.be).
 
+For community related questions, you can use [community@fair-dom.org](mailto:community@fair-dom.org)
 
 ## Reporting bugs and feature requests
 
