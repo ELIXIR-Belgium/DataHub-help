@@ -1,5 +1,4 @@
-copyright: 'Copyright ©️2009-Present, University of Manchester and HITS gGmbH'
-extra_line: 
+extra_line:
 columns:
   - type: image
     image_width: 64px
@@ -8,8 +7,8 @@ columns:
     alt: SEEK logo
   - type: links
     width: 2
-    children: 
-      - url_text: Documentation Home
+    children:
+      - url_text: Home
         url: /
   - type: links
     width: 2
@@ -21,6 +20,12 @@ columns:
   - type: links
     width: 2
     children:
-      - url_text: FAIRDOM-SEEK Website
-        url: https://seek4science.org/
+      - url_text: Technical References
+        url: /tech/
+      - url_text: Roadmap
+        url: /tech/roadmap
+      - url_text: Useful Links
+        url: /tech/useful-links.html
+      - url_text: Contributing
+        url: /tech/contributing
 
