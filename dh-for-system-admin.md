@@ -3,6 +3,7 @@ title: For System Admin
 layout: page-ett
 sidebar: home
 permalink: /sys-admin
+disable_github_buttons: true
 ---
 
 # How to deploy FAIRDOM-SEEK as DataHub
