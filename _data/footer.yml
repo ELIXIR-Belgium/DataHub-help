@@ -13,10 +13,12 @@ columns:
   - type: links
     width: 2
     children:
-      - url_text: FAIRDOM Website
-        url: https://fair-dom.org/
-      - url_text: Contacting Us
-        url: https://fair-dom.org/contact
+      - url_text: User Guide
+        url: /help/user-guide/
+      - url_text: API Introduction
+        url: /help/user-guide/api
+      - url_text: Use-cases
+        url: /use-cases
   - type: links
     width: 2
     children:
