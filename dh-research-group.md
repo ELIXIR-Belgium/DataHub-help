@@ -3,6 +3,7 @@ title: Step-by-step guide for research group
 layout: page-ett
 sidebar: home
 permalink: /step-by-step-research-group
+disable_github_buttons: true
 ---
 
 ## Overview
