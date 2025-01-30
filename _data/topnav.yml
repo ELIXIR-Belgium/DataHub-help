@@ -7,4 +7,6 @@ subitems:
   url: /help/user-guide/
 - title: Technical Guide
   url: /tech/
-  
+- title: Use-cases
+  url: /use-cases
+## move some links to footer
