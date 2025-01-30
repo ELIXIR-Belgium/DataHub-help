@@ -9,8 +9,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
 
-# Do not remove the site.title. It's part of the ETT configuration.
-title: "FAIRDOM-SEEK Documentation"
+title: "DataHub Documentation"
 topnav_title: ""
 instance_name: "DataHub"
 
@@ -56,7 +55,7 @@ theme_variables:
   #   headings: 'h2'
   topnav:
     theme: light
-    brand_logo: images/fairdom-seek-docs-logo.svg
+    brand_logo: images/datahub_logo.png
     #github: true
     #twitter: false
   theme_color: 8cddf6
