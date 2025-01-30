@@ -54,7 +54,7 @@ You can select an organism from the drop down menu.
 
 ## Sharing
 
-FAIRDOM-SEEK has fine grained sharing permissions. You can choose to set an item private (no access) or to share it with selected people, institutions, projects or programmes within SEEK, or to share it publicly.
+{{ site.instance_name }} has fine grained sharing permissions. You can choose to set an item private (no access) or to share it with selected people, institutions, projects or programmes within SEEK, or to share it publicly.
 
 There are different levels of sharing permissions:
 * "View" allows to see only the title and description of an item;
