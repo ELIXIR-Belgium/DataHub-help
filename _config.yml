@@ -12,7 +12,7 @@ plugins:
 # Do not remove the site.title. It's part of the ETT configuration.
 title: "FAIRDOM-SEEK Documentation"
 topnav_title: ""
-instance_name: "FAIRDOM-SEEK"
+instance_name: "DataHub"
 
 
 seek_instance:
