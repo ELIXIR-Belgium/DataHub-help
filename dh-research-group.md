@@ -1,7 +1,6 @@
 ---
 title: Step-by-step guide for research group
 layout: page-ett
-sidebar: home
 permalink: /step-by-step-research-group
 disable_github_buttons: true
 ---
@@ -13,10 +12,10 @@ disable_github_buttons: true
 ## Group leader
 
 ### 1. Register
-As first step, you have to create an account in DataHub. Follow the link to see how to [register](help/user-guide/registering.html).
+As first step, you have to create an account in DataHub. Follow the link to see how to [register]({{"help/user-guide/registering" | relative_url}}).
 
 ### 2. Login
-To start organising your research, you must me logged in. Follow the link to see how to [login](help/user-guide/login.html).
+To start organising your research, you must me logged in. Follow the link to see how to [login](help/user-guide/login).
 
 ### 3. Create a Programme
 Create a Programme to group all your research projects under it. The title of the Programme could be the name of your laboratory or of your research unit. Follow the link to see how to [create a Programme](help/user-guide/programme-creation-and-management.html#creating-a-programme).

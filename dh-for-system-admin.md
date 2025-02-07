@@ -1,8 +1,7 @@
 ---
-title: For System Admin
+title: Deploy DataHub
 layout: page-ett
-sidebar: home
-permalink: /sys-admin
+permalink: /deploy-datahub
 disable_github_buttons: true
 ---
 

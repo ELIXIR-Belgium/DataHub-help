@@ -12,12 +12,9 @@ title: DataHub Documentation # Replace with instance name
 {% endunless %}
 </div>
 
-<div class="row">
-    <div class="col text-center">
-       <img src="images/datahub_logo2.svg" />
-    </div>
+<div class="col text-center">
+    <img src="{{ 'images/datahub_banner_600.svg' | relative_url }}" />
 </div>
-
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
  About DataHub
@@ -29,12 +26,53 @@ For more specific documentation related to DataHub, users should follow the step
 
 ### Step-by-step guides
 
-#### For research group
-
-- [Overview](/step-by-step-research-group#overview)
-- [Group leader](/step-by-step-research-group#group-leader)
-- [Researcher](/step-by-step-research-group#researcher)
-- [Creator of templates](/step-by-step-research-group#creator-of-templates)
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mb-2">
+    <div class="col">
+        <div class="card rounded shadow shadow-hover h-100">
+            <div class="card-body">
+                <h4 class="card-title mt-0"> For instance admins </h4>
+                <p class="card-text text-justify">If you would like to deploy your own instance of DataHub, follow <a href="/deploy-datahub">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card rounded shadow shadow-hover h-100">
+            <div class="card-body">
+                <h4 class="card-title mt-0"> For research group </h4>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item"><a href="/step-by-step-research-group#overview">Overview</a></li>
+                    <li class="list-group-item"><a href="/step-by-step-research-group#group-leader">Group leader</a></li>
+                    <li class="list-group-item"><a href="/step-by-step-research-group#researcher">Researcher</a></li>
+                    <li class="list-group-item"><a href="/step-by-step-research-group#creator-of-templates">Creator of templates</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card rounded shadow shadow-hover h-100">
+            <div class="card-body">
+                <h4 class="card-title mt-0"> For Research Consortia </h4>
+                <p class="card-text text-justify">Text about consortia</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card rounded shadow shadow-hover h-100">
+            <div class="card-body">
+                <h4 class="card-title mt-0"> For Research Core Facilities </h4>
+                <p class="card-text text-justify">Text about Research Core Facilities</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card rounded shadow shadow-hover h-100">
+            <div class="card-body">
+                <h4 class="card-title mt-0"> For Research Institutes or infrastructure providers</h4>
+                <p class="card-text text-justify">Text about Research Core Facilities</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
