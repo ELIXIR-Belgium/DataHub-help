@@ -19,6 +19,8 @@ columns:
         url: /help/user-guide/api
       - url_text: Use-cases
         url: /use-cases
+      - url_text: Get Started
+      - url_text: About us
   - type: links
     width: 2
     children:
