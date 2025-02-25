@@ -40,10 +40,10 @@ For more specific documentation related to DataHub, users should follow the step
             <div class="card-body">
                 <h4 class="card-title mt-0"> For research group </h4>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="/step-by-step-research-group#overview">Overview</a></li>
-                    <li class="list-group-item"><a href="/step-by-step-research-group#group-leader">Group leader</a></li>
-                    <li class="list-group-item"><a href="/step-by-step-research-group#researcher">Researcher</a></li>
-                    <li class="list-group-item"><a href="/step-by-step-research-group#creator-of-templates">Creator of templates</a></li>
+                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#overview">Overview</a></li>
+                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#group-leader">Group leader</a></li>
+                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#researcher">Researcher</a></li>
+                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#creator-of-templates">Creator of templates</a></li>
                 </ul>
             </div>
         </div>

@@ -1,6 +1,5 @@
 ---
 title: Use-cases
-layout: page-ett
 sidebar: use-cases
 permalink: /use-cases
 disable_github_buttons: true
@@ -17,4 +16,7 @@ Use your experimental structure from DataHub to submit metadata to ENA. A step-b
 
 ## MARS
 
-## Nextcloud interface
+MARS is a data brokering initiative for submitting multi-omics life sciences studies to multiple specialized repositories.
+DataHub plays the role of ISA-JSON producing platform and will be able to produce an ISA-JSON which can be consumed by the MARS CLI tool to perform a multi-omic submission.
+
+More information of this initiative can be found on GitHub: <https://github.com/elixir-europe/MARS>.

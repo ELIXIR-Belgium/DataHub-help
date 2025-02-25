@@ -1,6 +1,5 @@
 ---
 title: How to organise your research in DataHub
-layout: page-ett
 permalink: /experiment-organisation
 disable_github_buttons: true
 ---
