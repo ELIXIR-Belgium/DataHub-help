@@ -1,6 +1,5 @@
 ---
 title: Deploy DataHub
-layout: page-ett
 permalink: /deploy-datahub
 disable_github_buttons: true
 ---

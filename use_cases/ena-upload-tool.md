@@ -1,6 +1,5 @@
 ---
 title: ENA Upload Tool
-layout: page-ett
 sidebar: use-cases
 permalink: /use-cases/ena-upload-tool
 disable_github_buttons: true
@@ -31,10 +30,12 @@ Feel free to use your own experimental data and metadata to do the submission or
 
 When exporting the metadata from DataHub to the ISA-JSON format, it is always done from the investigation level.
 
+Steps:
+
+- Go to the investigation level
+- Click export ISA
+- Save the JSON file on your device
+
 ### Start a submission towards ENA
 
-#### Using the CLI tool
-
-#### On usegalaxy.be
-
-Link to RDM Guide
+For the actual submission towards ENA, we refer to the '[ENA Data Submission Toolbox](https://rdm.elixir-belgium.org/ena-submission)' article in the RDM Guide, which describes how to use the ENA Upload Tool.

@@ -1,6 +1,5 @@
 ---
 title: Step-by-step guide for research group
-layout: page-ett
 permalink: /step-by-step-research-group
 disable_github_buttons: true
 ---
@@ -33,7 +32,7 @@ Follow the link to see how to [create a Project](help/user-guide/create-a-projec
 By default, you will be assigned as member and administrator of the created Project. This can be changed later.
 
 ### 5. Add members to the Project and manage their roles
-Assign researchers or lab staff that will manage the research and/or perform the experiments to the Project. To this end, each researcher or staff must have a profile in DataHub. 
+Assign researchers or lab staff that will manage the research and/or perform the experiments to the Project. To this end, each researcher or staff must have a profile in DataHub.
 
 Project members can have different roles, so make sure to assign the appropriate role to the right researcher or staff in your group.
 
@@ -62,7 +61,7 @@ Follow the link to see the [roles](help/user-guide/roles.html) and how to [admin
 Protocols of experimental steps or data analysis must be registered in DataHub in order to be associated with ISA Studies and ISA Assays.
 
 #### Where to register your protocols
-Protocols for a research group can be grouped 
+Protocols for a research group can be grouped
 * within a dedicated Project only for protocols, within a Programme
 * within a research Project
 
