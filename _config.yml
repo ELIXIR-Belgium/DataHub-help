@@ -43,7 +43,7 @@ defaults:
       sidebar: technical_guide
 
 theme_variables:
-  show_breadcrumb: true
+  breadcrumb: true
   #git_host: GitHub
   #back_to_top: true
   #github_buttons:
@@ -61,3 +61,8 @@ theme_variables:
     #twitter: false
   theme_color: 8cddf6
 # theme color is not working! Trying c23669 from RDMkit doesn't help
+
+github:
+  repository_url: https://github.com/seek4science/seek-documentation
+  source:
+    branch: main
