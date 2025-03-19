@@ -43,6 +43,7 @@ defaults:
       sidebar: technical_guide
 
 theme_variables:
+  show_breadcrumb: true
   #git_host: GitHub
   #back_to_top: true
   #github_buttons:
