@@ -44,7 +44,7 @@ p:has(img.screenshot) {
 
 
 /*----Font Aweseome icon colour, match headings----*/
-main .fa-solid {
+main .fa-solid:not(.fa-house) {
     color: $secondary;
 }
 
