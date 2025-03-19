@@ -2,7 +2,8 @@
 title: ENA Upload Tool
 sidebar: use-cases
 permalink: /use-cases/ena-upload-tool
-disable_github_buttons: true
+custom_repo_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
+custom_repo_branch: datahub-latest-documentation
 ---
 
 ## What is the ENA Upload Tool?
