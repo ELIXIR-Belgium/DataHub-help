@@ -1,10 +1,10 @@
 /*-----Theme colors-----*/
 $white: #fff;
-$primary: #4c6478; 
+$primary: #4c6478;
 /* $indigo; #392b99; */
 /* $alertblue: #d7e1f3; */
 /* $brightblue: #8cddf6; */
-$secondary: darken($primary, 20%);
+$secondary: darken($primary, 10%);
 $gray-600: #74767f;
 $blue: #376ac3;
 $light: #f0f5fd;
@@ -33,10 +33,10 @@ $alert-border-width: 0;
 $input-group-addon-bg: $primary;
 $input-group-addon-color: $white;
 $input-bg: $primary;
-$input-color:  $white;
+$input-color: $white;
 $input-border-width: 0;
 $h1-font-size: 1rem * 2.5;
-$headings-color: $secondary!important;
+$headings-color: $secondary !important;
 $h2-font-size: 1rem * 1.9;
 $h3-font-size: 1rem * 1.4;
 $h4-font-size: 1rem * 1.1;
