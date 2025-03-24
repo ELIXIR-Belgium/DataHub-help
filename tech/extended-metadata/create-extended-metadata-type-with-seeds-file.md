@@ -109,7 +109,7 @@ end
 
 ```
 
-![]({{ "/images/user-guide/extended-metadata/attribute_cv_type.png" | relative_url }})
+![](/images/user-guide/extended-metadata/attribute_cv_type.png)
 {:.screenshot}
 
 ### 9. Controlled Vocabulary List

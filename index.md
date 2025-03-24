@@ -33,7 +33,7 @@ For more specific documentation related to DataHub, users should follow the step
         <div class="card rounded shadow shadow-hover h-100">
             <div class="card-body">
                 <h4 class="card-title mt-0"> For instance admins </h4>
-                <p class="card-text text-justify">If you would like to deploy your own instance of DataHub, follow <a href="/deploy-datahub">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
+                <p class="card-text text-justify">If you would like to deploy your own instance of DataHub, follow <a href="{{site.baseurl}}/deploy-datahub">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
             </div>
         </div>
     </div>
