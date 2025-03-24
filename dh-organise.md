@@ -9,15 +9,15 @@ custom_repo_branch: datahub-latest-documentation
 
 ### Overview
 
-![overview](/images/usecases-dh/overview.png){:.screenshot}
+![overview]({{ site.baseurl }}/images/usecases-dh/overview.png){:.screenshot}
 
 ### Use case: Sequencing of plants
 
-![genome-assembly](/images/usecases-dh/sequencing-plant.png){:.screenshot}
+![genome-assembly]({{ site.baseurl }}/images/usecases-dh/sequencing-plant.png){:.screenshot}
 
 ### Use case: Genome assembly
 
-![genome-assembly](/images/usecases-dh/genome-assembly.jpg){:.screenshot}
+![genome-assembly]({{ site.baseurl }}/images/usecases-dh/genome-assembly.jpg){:.screenshot}
 
 <!--## For research groups-->
 
