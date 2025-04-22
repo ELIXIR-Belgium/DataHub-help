@@ -7,19 +7,8 @@ custom_repo_branch: datahub-latest-documentation
 
 ## For research group and core facility
 
-### Overview
+![sequencing-plant]({{ "/images/usecases-dh/sequencing-plant.png" | relative_url }}){:.screenshot}
 
-![overview]({{ site.baseurl }}/images/usecases-dh/overview.png){:.screenshot}
+## For multi-partner consortium
 
-### Use case: Sequencing of plants
-
-![genome-assembly]({{ site.baseurl }}/images/usecases-dh/sequencing-plant.png){:.screenshot}
-
-### Use case: Genome assembly
-
-![genome-assembly]({{ site.baseurl }}/images/usecases-dh/genome-assembly.jpg){:.screenshot}
-
-<!--## For research groups-->
-
-
-<!--## For research core facilities-->
+![consortium]({{ "/images/usecases-dh/consortium.png" | relative_url }}){:.screenshot}

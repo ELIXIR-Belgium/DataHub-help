@@ -19,58 +19,36 @@ custom_repo_branch: datahub-latest-documentation
 </div>
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
- About DataHub
+ About {{ site.instance_name }}
 </h2>
 
-DataHub is an instance of the FAIRDOM-SEEK software (previously known as SEEK) and shares the same documentation. Consequently, the general user guide includes documentation about FAIRDOM-SEEK features that might not be available in DataHub by design.
+{{ site.instance_name }} is a web platform designed to facilitate the management of sample metadata. It aims to help scientists and research groups better document samples throughout experimental steps, ensuring compliance with the requirements of research core facilities, end-repositories, or any other standard metadata.
 
-For more specific documentation related to DataHub, users should follow the step-by-step guide provided below.
+{{ site.instance_name }} is based on the FAIRDOM-SEEK software (previously known as SEEK) and shares the same documentation. Consequently, the general user guide includes documentation about FAIRDOM-SEEK features that might not be available in {{ site.instance_name }} by design.
+
+For more specific documentation related to {{ site.instance_name }}, users should follow the [**step-by-step guides**](#step-by-step-guides) provided below or have a look at the example on [**how to manage your research in {{ site.instance_name }}**]({{ "/experiment-organisation" | relative_url }}).
 
 ### Step-by-step guides
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4 mb-2">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-2 g-4 mb-2">
     <div class="col">
         <div class="card rounded shadow shadow-hover h-100">
             <div class="card-body">
                 <h4 class="card-title mt-0"> For instance admins </h4>
-                <p class="card-text text-justify">If you would like to deploy your own instance of DataHub, follow <a href="{{site.baseurl}}/deploy-datahub">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
+                <p class="card-text text-justify">If you would like to deploy your own instance of {{ site.instance_name }}, follow <a href="{{ "/deploy-datahub" | relative_url }}">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
             </div>
         </div>
     </div>
     <div class="col">
         <div class="card rounded shadow shadow-hover h-100">
             <div class="card-body">
-                <h4 class="card-title mt-0"> For research group </h4>
+                <h4 class="card-title mt-0"> For research groups </h4>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#overview">Overview</a></li>
-                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#group-leader">Group leader</a></li>
-                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#researcher">Researcher</a></li>
-                    <li class="list-group-item"><a href="{{site.baseurl}}/step-by-step-research-group#creator-of-templates">Creator of templates</a></li>
+                    <li class="list-group-item"><a href="{{ "/step-by-step-research-group#overview" | relative_url }}">Overview</a></li>
+                    <li class="list-group-item"><a href="{{ "/step-by-step-research-group#group-leader" | relative_url }}">Group leader</a></li>
+                    <li class="list-group-item"><a href="{{ "/step-by-step-research-group#researcher" | relative_url }}">Researcher</a></li>
+                    <li class="list-group-item"><a href="{{ "/step-by-step-research-group#creator-of-templates" | relative_url }}">Creator of templates</a></li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card rounded shadow shadow-hover h-100">
-            <div class="card-body">
-                <h4 class="card-title mt-0"> For Research Consortia </h4>
-                <p class="card-text text-justify">Text about consortia</p>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card rounded shadow shadow-hover h-100">
-            <div class="card-body">
-                <h4 class="card-title mt-0"> For Research Core Facilities </h4>
-                <p class="card-text text-justify">Text about Research Core Facilities</p>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-        <div class="card rounded shadow shadow-hover h-100">
-            <div class="card-body">
-                <h4 class="card-title mt-0"> For Research Institutes or infrastructure providers</h4>
-                <p class="card-text text-justify">Text about Research Core Facilities</p>
             </div>
         </div>
     </div>
