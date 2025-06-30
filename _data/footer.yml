@@ -6,23 +6,18 @@ columns:
     src: 'images/favicon.png'
     alt: SEEK logo
   - type: links
-    width: 2
+    width: 3
     children:
       - url_text: Home
         url: /
-  - type: links
-    width: 2
-    children:
       - url_text: User Guide
         url: /help/user-guide/
       - url_text: API Introduction
         url: /help/user-guide/api
       - url_text: Use-cases
         url: /use-cases
-      - url_text: Get Started
-      - url_text: About us
   - type: links
-    width: 2
+    width: 3
     children:
       - url_text: Technical References
         url: /tech/
@@ -32,4 +27,3 @@ columns:
         url: /tech/useful-links.html
       - url_text: Contributing
         url: /tech/contributing
-
