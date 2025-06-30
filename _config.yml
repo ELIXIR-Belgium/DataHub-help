@@ -10,13 +10,10 @@ plugins:
   - jekyll-redirect-from
 
 title: "DataHub Documentation"
-topnav_title: ""
-instance_name: "DataHub"
-
 
 seek_instance:
-  name: "FAIRDOM-SEEK"
-  url: "https://fairdomhub.org"
+  name: "DataHub"
+  url: "https://datahub.elixir-belgium.org"
 
 exclude:
  - Gemfile*

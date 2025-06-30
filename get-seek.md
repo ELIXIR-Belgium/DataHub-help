@@ -38,17 +38,19 @@ FAIRDOM-SEEK is open source software, and is distributed under a [BSD License](h
 
 ## Alternative: use one of the public instances of FAIRDOM-SEEK
 {% include callout.html type="tip" content="
-If you do not want to install your own version of FAIRDOM-SEEK, you can register to use one of the [public instances](https://fair-dom.org/fairdom-in-use/). For example, see [FAIRDOMHub](https://fairdomhub.org), a version of FAIRDOM-SEEK which is hosted by [FAIRDOM](https://fair-dom.org) for general community use.
+If you do not want to install your own version of FAIRDOM-SEEK, you can register to use one of the [public instances](https://fair-dom.org/fairdom-in-use/). For example, see [DataHub](https://datahub.elixir-belgium.org), a version of FAIRDOM-SEEK which is hosted by [Elixir Belgium](https://www.elixir-belgium.org/) for general community use.
 " %}
 
 ### What are the differences?
 
-| ![FAIRDOMHub logo][hub] <br />FAIRDOMHub public hub | ![SEEK logo][seek] <br /> Your own FAIRDOM-SEEK installation |
-|-----------------------------------------------------|---------|
-| Requires registration                               | Requires installation and hosting |
-| Managed by the FAIRDOM consortium                   | Managed by your technical team |
-| Registry for data, operating procedures and models  | Registry for your choice of content  |
-| Open and public                                     | Can be open, public or private  |
+| ![DataHub logo][hub]{:height="64px"} <br />DataHub public hub | ![SEEK logo][seek] <br /> Your own FAIRDOM-SEEK installation |
+| ------------------------------------------------------------- | ------------------------------------------------------------ |
+| Requires registration                                         | Requires installation\* and hosting                          |
+| Managed by Elixir Belgium                                     | Managed by your technical team                               |
+| Registry for data, operating procedures and models            | Registry for your choice of content                          |
+| Open and public                                               | Can be open, public or private                               |
 
-[hub]: {{"/images/fairdomhub-favicon.png" | relative_url }}
-[seek]: {{ "/images/favicon.png" | relative_url }}
+[hub]: {{"/images/datahub_logo2.svg" | relative_url }}
+[seek]: {{ "/images/fairdom_seek_logo.png" | relative_url }}
+
+**\*Note:** Please have a look at our ['Deploy FAIRDOM-SEEK as DataHub']({{ "/deploy-datahub" | relative_url }}) guide for applying the right configurations.

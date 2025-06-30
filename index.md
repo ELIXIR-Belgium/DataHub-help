@@ -6,27 +6,19 @@ custom_repo_branch: datahub-latest-documentation
 ---
 {% assign seek_instance_name = site.seek_instance.name | default: "FAIRDOM-SEEK" %}
 
-<!--Complete the description of your own instance here or delete it.-->
-<div>
-{% unless seek_instance_name == "FAIRDOM-SEEK" %}
-    ## About {{ seek_instance_name }}
-    The {{ seek_instance_name }} platform is based on the [FAIRDOM-SEEK](https://seek4science.org/) software.
-{% endunless %}
-</div>
-
 <div class="col text-center">
     <img src="{{ 'images/datahub_banner_600.svg' | relative_url }}" />
 </div>
 <h2>
 <i class="fa-solid fa-flask-vial fa-1x"></i> <i class="fa-solid fa-magnifying-glass-chart fa-1x"></i>
- About {{ site.instance_name }}
+ About {{ site.seek_instance.name }}
 </h2>
 
-{{ site.instance_name }} is a web platform designed to facilitate the management of sample metadata. It aims to help scientists and research groups better document samples throughout experimental steps, ensuring compliance with the requirements of research core facilities, end-repositories, or any other standard metadata.
+{{ site.seek_instance.name }} is a web platform designed to facilitate the management of sample metadata. It aims to help scientists and research groups better document samples throughout experimental steps, ensuring compliance with the requirements of research core facilities, end-repositories, or any other standard metadata.
 
-{{ site.instance_name }} is based on the FAIRDOM-SEEK software (previously known as SEEK) and shares the same documentation. Consequently, the general user guide includes documentation about FAIRDOM-SEEK features that might not be available in {{ site.instance_name }} by design.
+{{ site.seek_instance.name }} is based on the FAIRDOM-SEEK software (previously known as SEEK) and shares the same documentation. Consequently, the general user guide includes documentation about FAIRDOM-SEEK features that might not be available in {{ site.seek_instance.name }} by design.
 
-For more specific documentation related to {{ site.instance_name }}, users should follow the [**step-by-step guides**](#step-by-step-guides) provided below or have a look at the example on [**how to manage your research in {{ site.instance_name }}**]({{ "/experiment-organisation" | relative_url }}).
+For more specific documentation related to {{ site.seek_instance.name }}, users should follow the [**step-by-step guides**](#step-by-step-guides) provided below or have a look at the example on [**how to manage your research in {{ site.seek_instance.name }}**]({{ "/experiment-organisation" | relative_url }}).
 
 ### Step-by-step guides
 
@@ -35,7 +27,7 @@ For more specific documentation related to {{ site.instance_name }}, users shoul
         <div class="card rounded shadow shadow-hover h-100">
             <div class="card-body">
                 <h4 class="card-title mt-0"> For instance admins </h4>
-                <p class="card-text text-justify">If you would like to deploy your own instance of {{ site.instance_name }}, follow <a href="{{ "/deploy-datahub" | relative_url }}">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
+                <p class="card-text text-justify">If you would like to deploy your own instance of {{ site.seek_instance.name }}, follow <a href="{{ "/deploy-datahub" | relative_url }}">this guide</a> to get an overview of the features you need to enable in the admin panel. </p>
             </div>
         </div>
     </div>
@@ -64,8 +56,6 @@ models or simulations, processes and research outcomes. More details about FAIRD
 
 To see examples of FAIRDOM-SEEK being configured in hubs and projects, please visit the [FAIRDOM-SEEK In Use page](https://fair-dom.org/fairdom-in-use/) on the FAIRDOM website.
 If you wish to practice using FARIDOM-SEEK without disturbing any real hubs or projects, please visit our [Demo](https://demo.seek4science.org).
-
-<br /><br />
 
 ## Getting started
 
