@@ -18,7 +18,7 @@ custom_repo_branch: datahub-latest-documentation
 
 {{ site.seek_instance.name }} is based on the FAIRDOM-SEEK software (previously known as SEEK) and shares the same documentation. Consequently, the general user guide includes documentation about FAIRDOM-SEEK features that might not be available in {{ site.seek_instance.name }} by design.
 
-For more specific documentation related to {{ site.seek_instance.name }}, users should follow the [**step-by-step guides**](#step-by-step-guides) provided below or have a look at the example on [**how to manage your research in {{ site.seek_instance.name }}**]({{ "/experiment-organisation" | relative_url }}).
+For more specific documentation related to {{ site.seek_instance.name }}, users should follow the [**step-by-step guides**](#step-by-step-guides) provided below or have a look at the example on [**how to organise your research in {{ site.seek_instance.name }}**]({{ "/experiment-organisation" | relative_url }}).
 
 ### Step-by-step guides
 
