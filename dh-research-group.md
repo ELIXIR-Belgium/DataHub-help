@@ -1,8 +1,9 @@
 ---
 title: Step-by-step guide for research group
 permalink: /step-by-step-research-group
-custom_repo_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
-custom_repo_branch: datahub-latest-documentation
+github:
+    repository_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
+    branch: datahub-latest-documentation
 ---
 
 ## Overview
