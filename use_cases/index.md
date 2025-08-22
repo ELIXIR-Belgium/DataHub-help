@@ -2,8 +2,9 @@
 title: Use-cases
 sidebar: use-cases
 permalink: /use-cases
-custom_repo_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
-custom_repo_branch: datahub-latest-documentation
+github:
+    repository_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
+    branch: datahub-latest-documentation
 ---
 Explore both existing and upcoming applications and integrations of DataHub.
 
