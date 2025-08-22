@@ -1,8 +1,9 @@
 ---
 sidebar: false
 title: DataHub Documentation # Replace with instance name
-custom_repo_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
-custom_repo_branch: datahub-latest-documentation
+github:
+    repository_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
+    branch: datahub-latest-documentation
 ---
 {% assign seek_instance_name = site.seek_instance.name | default: "FAIRDOM-SEEK" %}
 

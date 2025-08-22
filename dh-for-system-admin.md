@@ -1,8 +1,9 @@
 ---
 title: Deploy FAIRDOM-SEEK as DataHub
 permalink: /deploy-datahub
-custom_repo_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
-custom_repo_branch: datahub-latest-documentation
+github:
+    repository_url: https://github.com/ELIXIR-Belgium/datahub-test-documentation
+    branch: datahub-latest-documentation
 ---
 
 Should you want to deploy your own DataHub-like instance of FAIRDOM-SEEK, you can follow this guide.
