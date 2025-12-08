@@ -1,7 +1,7 @@
 title: Use-cases
 title_url: /use-cases/
 subitems:
+  - title: ENA Export
+    url: /use-cases/ena-export
   - title: ENA Upload Tool
     url: /use-cases/ena-upload-tool
-  - title: Home
-    url: /

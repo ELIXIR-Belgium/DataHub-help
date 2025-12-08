@@ -8,6 +8,10 @@ github:
 ---
 Explore both existing and upcoming applications and integrations of DataHub.
 
+## ENA Export
+
+It is possible, in DataHub, to export relevant information for the submission of raw nucleotide sequencing data to the European Nucleotide Archive ([ENA](https://www.ebi.ac.uk/ena/browser/home)). Read [this guide]({{ "/use-cases/ena-export" | relative_url }}) for more information.
+
 ## ENA-upload tool
 
 Use your experimental structure from DataHub to submit metadata to ENA. A step-by-step guide on how to export your metadata from DataHub and use the ENA upload tool to submit to ENA can be found [here]({{ "/use-cases/ena-upload-tool#step-by-step-guide" | relative_url }}).
